@@ -17,12 +17,12 @@ const Contact = () => {
 
   return (
     <section id="contact" className="bg-[#0f172a] px-10 py-8">
-      <div className="mx-auto max-w-screen-md">
+      <div data-aos="fade-up">
         <Title text={REACH_OUT} />
-        <p className="mb-8 font-light text-center text-gray-400 sm:text-xl">
-          {REACH_OUT_MSG}
+        <p className="mb-12 mt-[-1rem] font-light text-center text-gray-400 sm:text-xl">
+            {REACH_OUT_MSG}
         </p>
-        <form action="#" className="space-y-8">
+        <form action="#" className="mx-auto max-w-screen-md space-y-8">
           <div>
             <label
               htmlFor="email"

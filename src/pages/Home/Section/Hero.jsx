@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section id="home" className="bg-[#0f172a]">
       <div className="grid max-w-screen-xl px-16 py-28 mx-auto lg:grid-cols-12">
-        <div className="mr-auto place-self-center lg:col-span-7">
+        <div className="mr-auto place-self-center lg:col-span-7" data-aos="zoom-in">
           <h2 className="max-w-2xl mb-4 text-2xl font- tracking-tight leading-[1.15] md:text-3xl xl:text-4xl text-white">
             {HELLO}
           </h2>
