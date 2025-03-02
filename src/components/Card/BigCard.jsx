@@ -4,7 +4,12 @@ import { motion } from "framer-motion";
 import { Card } from "flowbite-react";
 import PropTypes from "prop-types";
 
-const BigCard = ({ img, title, category, body }) => {
+const BigCard = ({ 
+  img = "https://placehold.co/600x400", 
+  title = "Title", 
+  category = "Category", 
+  body = "Body", 
+}) => {
   return (
     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
       <Card
@@ -30,13 +35,6 @@ BigCard.propTypes = {
   title: PropTypes.string,
   category: PropTypes.string,
   body: PropTypes.string,
-};
-
-BigCard.defaultProps = {
-  img: "https://placehold.co/600x400",
-  title: "Title",
-  category: "Category",
-  body: "Body",
 };
 
 export default BigCard;
