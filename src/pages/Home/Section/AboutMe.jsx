@@ -13,7 +13,7 @@ const AboutMe = () => {
 
   return (
     <section id="about_me" className="bg-[#102a43] px-10 py-8">
-      <Title title={ABOUT_ME} />
+      <Title text={ABOUT_ME} />
       <p className="text-white text-justify mx-auto max-w-md">
         {ABOUT_ME_DESC}
       </p>

@@ -11,7 +11,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="bg-[#102a43] py-8">
-      <Title title={PROJECTS} />
+      <Title text={PROJECTS} />
       <div className="px-12 mx-auto max-w-screen-lg grid place-items-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 grid-auto-rows-fr">
         {projectData.map((project) => (
           <Link to={`/project/${project.id}`} key={project.id}>

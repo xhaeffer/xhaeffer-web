@@ -18,7 +18,7 @@ const Contact = () => {
   return (
     <section id="contact" className="bg-[#0f172a] px-10 py-8">
       <div className="mx-auto max-w-screen-md">
-        <Title title={REACH_OUT} />
+        <Title text={REACH_OUT} />
         <p className="mb-8 font-light text-center text-gray-400 sm:text-xl">
           {REACH_OUT_MSG}
         </p>

@@ -10,7 +10,7 @@ const Skills = () => {
 
   return (
     <section id="skills" className="bg-[#0f172a] px-10 py-8">
-      <Title title={SKILLS} />
+      <Title text={SKILLS} />
       <div className="mx-auto max-w-md">
         {skillIcons.map((skill, index) => (
           <div key={index} className="mb-6">
