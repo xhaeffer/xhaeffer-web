@@ -37,10 +37,10 @@ const NavigationBar = () => {
           <Link
             key={index}
             to={item.to}
-            spy={true}
-            smooth={true}
+            spy
+            smooth
             duration={500}
-            offset={-32}
+            offset={-44}
             activeClass="text-[#ffffff] text-bold"
             className="hover:cursor-pointer text-[#9ca3af] hover:text-cyan-700"
           >

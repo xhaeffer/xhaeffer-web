@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 import instagram from "/icons/instagram.svg";
 import linkedin from "/icons/linkedin.svg";
+import github from "/icons/github-white.svg";
 
 import { en } from "../../../constants/string";
 
@@ -26,6 +27,10 @@ const AboutMe = () => {
 
           <Link to="https://www.linkedin.com/in/subhansp" target="_blank">
             <RoundIcon name="Linkedin" icon={linkedin} />
+          </Link>
+
+          <Link to="https://www.github.com/xhaeffer" target="_blank">
+            <RoundIcon name="GitHub" icon={github} />
           </Link>
         </div>
       </div>

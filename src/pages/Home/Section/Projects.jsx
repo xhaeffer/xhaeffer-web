@@ -10,10 +10,10 @@ const Projects = () => {
   const { PROJECTS } = en;
 
   return (
-    <section id="projects" className="bg-[#102a43] py-8">
+    <section id="projects" className="bg-[#102a43] px-10 py-8">
       <div data-aos="fade-up">
         <Title text={PROJECTS} />
-        <div className="px-12 mx-auto max-w-screen-lg grid place-items-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 grid-auto-rows-fr">
+        <div className="grid place-items-center mx-auto gap-6 grid-cols-1 max-w-sm sm:grid-cols-2 sm:max-w-screen-sm md:grid-cols-3 md:max-w-screen-lg ">
           {projectData.map((project) => (
             <Link to={`/project/${project.id}`} key={project.id}>
               <BigCard

@@ -13,7 +13,7 @@ const BigCard = ({
   return (
     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
       <Card
-        className="bg-transparent flex flex-col min-h-[350px] max-h-[350px]"
+        className="flex flex-col min-h-[350px]"
         imgAlt={title}
         imgSrc={img}
       >
