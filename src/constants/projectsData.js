@@ -63,8 +63,8 @@ const projectsData = [
     gallery: [
       "https://i.ibb.co.com/yJGQhYK/2025-02-28-17-01-dicoding-point-restaurant-vercel-app.png",
       "https://i.ibb.co.com/SwpkSNqc/2025-02-28-16-59-dicoding-point-restaurant-vercel-app.png",
-      "https://i.ibb.co.com/yJGQhYK/2025-02-28-17-01-dicoding-point-restaurant-vercel-app.png",
       "https://i.ibb.co.com/Ld4Dpz8F/2025-02-28-19-15-dicoding-point-restaurant-vercel-app.png",
+      "https://i.ibb.co.com/2GbqNjd/download-1.png",
       "https://i.ibb.co.com/LzZvLC5V/aaaaa.png",
     ],
     additional: [
