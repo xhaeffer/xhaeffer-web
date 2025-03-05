@@ -19,6 +19,7 @@ const Projects = () => {
               <BigCard
                 img={project.cover}
                 title={project.title}
+                type={project.type}
                 category={project.category}
                 summary={project.summary}
               />

@@ -10,6 +10,7 @@ const DEFAULT_IMG = "https://placehold.co/600x400";
 const BigCard = ({
   img = DEFAULT_IMG,
   title = "Title",
+  type = "Type",
   category = "Category",
   summary = "Summary",
 }) => {
@@ -37,14 +38,19 @@ const BigCard = ({
       <Card
         className="flex flex-col min-h-[400px] max-h-[400px] overflow-hidden"
         renderImage={() => (
-          <img className="w-full h-[180px]" src={validImg} alt={title} />
+          <div className="relative">
+            <img className="w-full h-[180px]" src={validImg} alt={title} />
+            <div className="absolute top-2 right-2 bg-black text-white text-xs px-2 py-1 rounded">
+              {category}
+            </div>
+        </div>
         )}
       >
         <div>
           <h1 className="text-2xl font-semibold tracking-tight text-white line-clamp-2">
             {title}
           </h1>
-          <h2 className="text-md font-medium text-gray-400">{category}</h2>
+          <h2 className="text-md font-medium text-gray-400">{type}</h2>
           <br />
           <p className="font-normal text-slate-400 line-clamp-3">{summary}</p>
         </div>
@@ -56,6 +62,7 @@ const BigCard = ({
 BigCard.propTypes = {
   img: PropTypes.string,
   title: PropTypes.string,
+  type: PropTypes.string,
   category: PropTypes.string,
   summary: PropTypes.string,
 };
