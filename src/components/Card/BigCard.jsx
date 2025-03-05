@@ -41,7 +41,7 @@ const BigCard = ({
   return (
     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
       <Card
-        className="flex flex-col min-h-[400px] max-h-[400px] overflow-hidden"
+        className="flex flex-col min-h-[400px] max-h-[400px] min-w-[324px] max-w-[324px] overflow-hidden"
         renderImage={() => (
           <div className="relative">
             <img
