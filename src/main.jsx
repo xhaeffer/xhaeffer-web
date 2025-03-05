@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import { Flowbite } from "flowbite-react";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
 import App from "./App";
 import AOS from "aos";
@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Analytics />
     <BrowserRouter>
-      <Flowbite theme={{ mode: 'dark' }}>
+      <Flowbite theme={{ mode: "dark" }}>
         <App />
       </Flowbite>
     </BrowserRouter>
