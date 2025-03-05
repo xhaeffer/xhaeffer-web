@@ -10,9 +10,6 @@ import Additional from "./Section/Additional";
 
 import projectsData from "../../constants/projectsData";
 
-const DEFAULT_DESC =
-  "Provide details about the project, such as a preview or code.";
-
 const ProjectDetail = () => {
   const { id } = useParams();
   const [validDesc, setValidDesc] = useState("");
@@ -34,7 +31,7 @@ const ProjectDetail = () => {
 
         setValidDesc(text);
       } catch {
-        setValidDesc(DEFAULT_DESC);
+        setValidDesc(url);
       }
     };
 
