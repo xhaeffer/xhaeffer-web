@@ -2,6 +2,7 @@ import { Button } from "flowbite-react";
 import { scroller } from "react-scroll";
 import { HiOutlineArrowRight } from "react-icons/hi";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
 
 import { en } from "../../../constants/string";
 
@@ -58,9 +59,15 @@ const Hero = () => {
             </Button>
           </div>
         </div>
-        <img
+        <motion.img
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          whileHover={{
+            y: [0, -10, 0],
+            transition: { repeat: Infinity, duration: 0.3 },
+          }}
           className="hidden sm:flex w-72"
-          data-aos="zoom-in"
           src="/img/stelle.png"
           alt="Stelle from Honkai: Star Rail"
         />
