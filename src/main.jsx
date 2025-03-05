@@ -9,6 +9,7 @@ import AOS from "aos";
 
 import "./index.css";
 import "aos/dist/aos.css";
+import "photoswipe/dist/photoswipe.css";
 
 AOS.init();
 

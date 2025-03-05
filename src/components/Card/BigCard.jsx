@@ -17,9 +17,12 @@ const BigCard = ({
   const [validImg, setValidImg] = useState(img);
 
   useEffect(() => {
+    const controller = new AbortController();
+    const { signal } = controller;
+
     const checkImage = async (url) => {
       try {
-        const res = await fetch(url, { method: "HEAD" });
+        const res = await fetch(url, { method: "HEAD", signal });
         if (!res.ok) throw new Error("Image not available");
 
         setValidImg(url);
@@ -31,6 +34,8 @@ const BigCard = ({
     if (img !== DEFAULT_IMG) {
       checkImage(img);
     }
+
+    return () => controller.abort();
   }, [img]);
 
   return (
@@ -39,7 +44,12 @@ const BigCard = ({
         className="flex flex-col min-h-[400px] max-h-[400px] overflow-hidden"
         renderImage={() => (
           <div className="relative">
-            <img className="w-full h-[180px]" src={validImg} alt={title} />
+            <img
+              className="w-full h-[180px]"
+              onError={() => setValidImg(DEFAULT_IMG)}
+              src={validImg}
+              alt={title}
+            />
             <div className="absolute top-2 right-2 bg-black text-white text-xs px-2 py-1 rounded">
               {category}
             </div>
