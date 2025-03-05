@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import Title from "../../../components/Paragraph/Title";
+import Heading from "../../../components/Paragraph/Heading";
 import BigCard from "../../../components/Card/BigCard";
 
 import projectData from "../../../constants/projectsData";
@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <section id="projects" className="bg-[#102a43] px-10 py-8">
       <div data-aos="fade-up">
-        <Title text={PROJECTS} />
+        <Heading text={PROJECTS} />
         <div className="grid place-items-center mx-auto gap-6 grid-cols-1 max-w-sm sm:grid-cols-2 sm:max-w-screen-sm md:grid-cols-3 md:max-w-screen-lg ">
           {projectData.map((project) => (
             <Link to={`/project/${project.id}`} key={project.id}>
@@ -20,7 +20,7 @@ const Projects = () => {
                 img={project.cover}
                 title={project.title}
                 category={project.category}
-                body={project.description}
+                summary={project.summary}
               />
             </Link>
           ))}

@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
 
-const Subtitle = ({ text }) => {
+const Subheading = ({ text }) => {
   return (
     <h2 className="font-semibold text-center text-lg text-slate-200">{text}</h2>
   );
 };
 
-Subtitle.propTypes = {
+Subheading.propTypes = {
   text: PropTypes.string.isRequired,
 };
 
-export default Subtitle;
+export default Subheading;

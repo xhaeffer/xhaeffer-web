@@ -16,7 +16,7 @@ const ContactForm = () => {
     EMAIL_FORM_SUCCESS_MSG,
     EMAIL_FORM_FAILED_MSG,
   } = en;
-  
+
   const [email, setEmail] = useInput("");
   const [subject, setSubject] = useInput("");
   const [message, setMessage] = useInput("");
@@ -45,7 +45,7 @@ const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit} className="mx-auto max-w-screen-md space-y-8">
       <div className="space-y-2">
-        <Label htmlFor="email" value={EMAIL_FORM_EMAIL_LABEL}/>
+        <Label htmlFor="email" value={EMAIL_FORM_EMAIL_LABEL} />
         <TextInput
           id="email"
           type="email"
