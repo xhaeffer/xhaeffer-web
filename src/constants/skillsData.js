@@ -1,4 +1,4 @@
-const skillIcons = [
+const skillData = [
   {
     category: "Hard Skills",
     icons: [
@@ -36,4 +36,4 @@ const skillIcons = [
   },
 ];
 
-export default skillIcons;
+export default skillData;

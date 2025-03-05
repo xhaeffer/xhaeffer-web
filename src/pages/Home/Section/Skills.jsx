@@ -2,7 +2,7 @@ import Heading from "../../../components/Paragraph/Heading";
 import Subheading from "../../../components/Paragraph/Subheading";
 import RectIcon from "../../../components/Icon/RectIcon";
 
-import skillIcons from "../../../constants/skillsData";
+import skillData from "../../../constants/skillsData";
 import { en } from "../../../constants/string";
 
 const Skills = () => {
@@ -13,7 +13,7 @@ const Skills = () => {
       <div data-aos="fade-up">
         <Heading text={SKILLS} />
         <div className="mx-auto max-w-md">
-          {skillIcons.map((skill, index) => (
+          {skillData.map((skill, index) => (
             <div key={index} className="mb-6">
               <Subheading text={skill.category} />
               <div className="flex flex-wrap gap-4 mt-4 justify-center">
