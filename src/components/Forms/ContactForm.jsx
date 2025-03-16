@@ -5,6 +5,22 @@ import { en } from "../../constants/string";
 import useInput from "../../hooks/useInput";
 
 const ContactForm = () => {
+  const inputTheme = {
+    field : {
+      input: {
+        colors: {
+          "gray": "bg-[#31363F] border-gray-600 text-white focus:border-cyan-500 focus:ring-cyan-500",
+        }
+      }
+    }
+  }
+
+  const textAreaTheme = {
+    colors: {
+      "gray": "bg-[#31363F] border-gray-600 text-white focus:border-cyan-500 focus:ring-cyan-500",
+    }
+  }
+
   const {
     EMAIL_FORM_EMAIL_LABEL,
     EMAIL_FORM_EMAIL_PLACEHOLDER,
@@ -50,6 +66,8 @@ const ContactForm = () => {
           id="email"
           type="email"
           name="email"
+          theme={inputTheme}
+          color="gray"
           placeholder={EMAIL_FORM_EMAIL_PLACEHOLDER}
           value={email}
           onChange={setEmail}
@@ -62,6 +80,8 @@ const ContactForm = () => {
         <TextInput
           id="subject"
           name="subject"
+          theme={inputTheme}
+          color="gray"
           placeholder={EMAIL_FORM_SUBJECT_PLACEHOLDER}
           value={subject}
           onChange={setSubject}
@@ -76,7 +96,8 @@ const ContactForm = () => {
           id="message"
           name="message"
           rows="6"
-          className="bg-gray-800"
+          theme={textAreaTheme}
+          color="gray"
           placeholder={EMAIL_FORM_MESSAGE_PLACEHOLDER}
           value={message}
           onChange={setMessage}
