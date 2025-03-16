@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Analytics />
     <BrowserRouter>
-      <Flowbite theme={{ mode: "dark" }}>
+      <Flowbite>
         <App />
       </Flowbite>
     </BrowserRouter>

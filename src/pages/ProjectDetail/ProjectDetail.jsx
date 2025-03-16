@@ -40,7 +40,7 @@ const ProjectDetail = () => {
   }, [description, id]);
 
   return (
-    <div className="bg-[#102a43] px-8 py-8 lg:px-52">
+    <div className="bg-[#161B22] px-8 py-8 lg:px-52">
       <Link className="flex items-center" to="/">
         <HiOutlineArrowLeft className="text-white h-5 w-5 mr-2" />
         <p className="text-white">Back To Home</p>

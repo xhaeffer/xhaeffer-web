@@ -9,7 +9,7 @@ const Skills = () => {
   const { SKILLS } = en;
 
   return (
-    <section id="skills" className="bg-[#0f172a] px-10 py-8">
+    <section id="skills" className="bg-[#161B22] px-10 py-8">
       <div data-aos="fade-up">
         <Heading text={SKILLS} />
         <div className="mx-auto max-w-md">

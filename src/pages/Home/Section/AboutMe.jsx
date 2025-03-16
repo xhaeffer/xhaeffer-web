@@ -28,7 +28,7 @@ const AboutMe = () => {
   ];
 
   return (
-    <section id="about_me" className="bg-[#102a43] px-10 py-8">
+    <section id="about_me" className="bg-[#222831] px-10 py-8">
       <div data-aos="fade-up" className="mx-auto max-w-md">
         <Heading text={ABOUT_ME} />
         <p className="text-white/80 text-justify">{ABOUT_ME_DESC}</p>

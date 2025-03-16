@@ -25,7 +25,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="bg-[#0f172a]">
+    <section id="home" className="bg-[#161B22]">
       <div className="flex flex-row justify-between max-w-screen-lg px-10 py-28 mx-auto">
         <div className="place-self-center" data-aos="zoom-in">
           <h2 className="max-w-2xl mb-4 text-2xl tracking-tight leading-[1.15] md:text-3xl xl:text-4xl text-white">

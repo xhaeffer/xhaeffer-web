@@ -15,7 +15,7 @@ const NavigationBar = () => {
   const [switchLang, setSwitchLang] = useState(true);
 
   return (
-    <Navbar fluid className="px-4 py-4 md:px-6 bg-gray-800 fixed w-full z-50">
+    <Navbar fluid className="dark:bg-[#181818] px-4 py-4 md:px-6 fixed w-full z-50">
       <Navbar.Brand href="#">
         <span className="self-center whitespace-nowrap text-xl font-semibold text-white">
           Subhan S

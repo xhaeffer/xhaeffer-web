@@ -10,7 +10,7 @@ const Projects = () => {
   const { PROJECTS } = en;
 
   return (
-    <section id="projects" className="bg-[#102a43] px-10 py-8">
+    <section id="projects" className="bg-[#222831] px-10 py-8">
       <div data-aos="fade-up">
         <Heading text={PROJECTS} />
         <div className="grid place-items-center mx-auto gap-6 grid-cols-1 max-w-sm sm:grid-cols-2 sm:max-w-screen-sm md:grid-cols-3 md:max-w-screen-lg ">
