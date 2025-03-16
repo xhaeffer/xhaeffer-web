@@ -3,7 +3,7 @@ const projectsData = [
     id: 1,
     title: "SuikaCore",
     category: "Backend as a Service (BaaS)",
-    cover: "https://i.ibb.co.com/S8PY7Vm/Untitled-Presentation-43.png",
+    cover: "https://imagizer.imageshack.com/img924/4957/QOwMfs.png",
     type: "Back-End Development",
     summary: "A monolithic Backend as a Service (BaaS) providing API solutions for the Suika ecosystem.",
     description: "SuikaCore is a monolithic backend system that serves as the core API provider for all Suika products. "+
@@ -26,8 +26,8 @@ const projectsData = [
       "Payment Integration"
     ],
     gallery: [
-      "https://i.ibb.co.com/8nvy6vzm/5-suikaweb-Def-J5-WOM.jpg",
-      "https://i.ibb.co.com/35xcpN2c/6-suikaweb-vj9gds-Pa.jpg"
+      "https://imagizer.imageshack.com/img922/5273/dvaCTZ.jpg",
+      "https://imagizer.imageshack.com/img924/3888/Alnnbh.jpg"
     ],
     additional: [
       {
@@ -40,7 +40,7 @@ const projectsData = [
     id: 2,
     title: "SuikaBot",
     category: "Multipurpose Chatbot",
-    cover: "https://i.ibb.co.com/j9Lk4FVC/Untitled-Presentation-43-1.png",
+    cover: "https://imagizer.imageshack.com/img923/3047/BfDVs4.png",
     type: "Chatbot Development",
     summary: 
       "A WhatsApp chatbot designed to enhance various tasks with features such as GenAI, file downloader, file converter, text translator, and more.",
@@ -76,8 +76,8 @@ const projectsData = [
       "Microsoft Azure",
     ],
     gallery: [
-      "https://i.ibb.co.com/zhx1fRCW/1-suikabot-pm-n-Z0i-Z.jpg",
-      "https://i.ibb.co.com/tPvq3Nv6/2-suikabot-qfp-Cu-Xat.jpg"
+      "https://imagizer.imageshack.com/img924/8596/5o5OQ1.jpg",
+      "https://imagizer.imageshack.com/img923/244/5ZaDEa.jpg"
     ],
     additional: [
       {
@@ -92,9 +92,9 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "SuikaBot-Gemini",
+    title: "SuikaBot-GeminiAI",
     category: "Generative AI Chatbot",
-    cover: "https://i.ibb.co.com/j9Lk4FVC/Untitled-Presentation-43-1.png",
+    cover: "https://imagizer.imageshack.com/img923/3047/BfDVs4.png",
     type: "Chatbot Development",
     summary: "An AI-powered WhatsApp chatbot utilizing Vertex AI for generative responses.",
     description: 
@@ -128,13 +128,13 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Suika-WaIntip",
+    title: "SuikaBot-WaIntip",
     category: "WhatsApp Chatbot",
-    cover: "https://i.ibb.co.com/j9Lk4FVC/Untitled-Presentation-43-1.png",
+    cover: "https://imagizer.imageshack.com/img923/3047/BfDVs4.png",
     type: "Chatbot Development",
     summary: "A WhatsApp chatbot that allows users to view one-time messages (photos, videos, and voice notes) without limitations.",
     description:
-      "Suika-WaIntip is a specialized WhatsApp chatbot designed to bypass the one-time view restriction on messages, enabling users to retrieve and save one seen media. " +
+      "SuikaBot-WaIntip is a subset of SuikaBot, designed to bypass WhatsApp’s one-time view restriction and let users retrieve viewed media " +
       "It is an advanced WhatsApp chatbot built using Node.js and whatsapp-web.js.\n\n" +
       "Key features of Suika-WaIntip include:\n" +
       "- Bypass one-time view messages (photos, videos, and voice notes)\n" +
@@ -150,8 +150,8 @@ const projectsData = [
       "One-Time Message Viewer",
     ],
     gallery: [
-      "https://i.ibb.co.com/My5DhwkW/private-msg.png",
-      "https://i.ibb.co.com/r21LCywk/only-admin-can-send-msg-group.png"
+      "https://imagizer.imageshack.com/img924/2233/Xy90NS.png",
+      "https://imagizer.imageshack.com/img924/9659/KXYITh.png"
     ],
     additional: [
       {
@@ -167,9 +167,9 @@ const projectsData = [
   },
   {
     id: 5,
-    title: "SuikaWeb",
+    title: "SuikaBot (Website)",
     category: "Website",
-    cover: "https://i.ibb.co.com/bjv0Hz4B/Screenshot-2025-03-05-222450.jpg",
+    cover: "https://imagizer.imageshack.com/img924/938/Pfvx2T.jpg",
     type: "Front-End Development",
     summary: "A landing page and management interface for SuikaBot and SuikaCore.",
     description: 
@@ -186,13 +186,13 @@ const projectsData = [
       "Vercel",
     ],
     gallery: [
-      "https://i.ibb.co.com/bjv0Hz4B/Screenshot-2025-03-05-222450.jpg",
-      "https://i.ibb.co.com/8n8nDX3z/Screenshot-2025-03-05-222555.jpg",
-      "https://i.ibb.co.com/jkZYZfsm/Screenshot-2025-03-05-222636.jpg",
-      "https://i.ibb.co.com/bRGDL2Vk/Screenshot-2025-03-05-222723.jpg",
-      "https://i.ibb.co.com/8DJrczVt/Screenshot-2025-03-05-222753.jpg",
-      "https://i.ibb.co.com/8nvy6vzm/5-suikaweb-Def-J5-WOM.jpg",
-      "https://i.ibb.co.com/35xcpN2c/6-suikaweb-vj9gds-Pa.jpg"
+      "https://imagizer.imageshack.com/img924/938/Pfvx2T.jpg",
+      "https://imagizer.imageshack.com/img924/7889/vkLDLc.jpg",
+      "https://imagizer.imageshack.com/img922/566/WDhrOS.jpg",
+      "https://imagizer.imageshack.com/img923/7092/9accRm.jpg",
+      "https://imagizer.imageshack.com/img922/4607/3oGPni.jpg",
+      "https://imagizer.imageshack.com/img922/5273/dvaCTZ.jpg",
+      "https://imagizer.imageshack.com/img924/3888/Alnnbh.jpg"
     ],
     additional: [
       {
@@ -210,7 +210,7 @@ const projectsData = [
     title: "BajoBliss (BaaS)",
     category: "Backend as a Service (BaaS)",
     cover:
-      "https://i.ibb.co.com/6JHZxVT2/349894153-adb5110b-efdd-4058-86ba-8bb160f35cdf.png",
+      "https://imagizer.imageshack.com/img924/5400/M3eOOh.png",
     type: "Back-End Development",
     summary: "Capstone Project: BajoBliss - Baparekraf Digital Talent 2024",
     description: 
@@ -248,7 +248,7 @@ const projectsData = [
     title: "BajoBliss: Discover Labuan Bajo's Treasures",
     category: "Website",
     cover:
-      "https://i.ibb.co.com/6JHZxVT2/349894153-adb5110b-efdd-4058-86ba-8bb160f35cdf.png",
+      "https://imagizer.imageshack.com/img924/5400/M3eOOh.png",
     type: "Front-End Development",
     summary: "Capstone Project: BajoBliss - Baparekraf Digital Talent 2024",
     description: 
@@ -266,11 +266,11 @@ const projectsData = [
       "Automation Testing",
     ],
     gallery: [
-      "https://i.ibb.co.com/6JHZxVT2/349894153-adb5110b-efdd-4058-86ba-8bb160f35cdf.png",
-      "https://i.ibb.co.com/ccZ8hhSC/349894823-25501398-4b61-4ceb-9757-3c58f9829ffe.png",
-      "https://i.ibb.co.com/vC6XGfxZ/349894932-ae11a9be-a801-4303-9dda-28e7cadd7d13.png",
-      "https://i.ibb.co.com/1fN8Kp1V/349894693-dc088202-6cd6-41c7-854a-f36f13946541.png",
-      "https://i.ibb.co.com/JRbp647L/349895069-78202db1-9412-482f-9be1-cdf0ac1ec0e6.png",
+      "https://imagizer.imageshack.com/img924/5400/M3eOOh.png",
+      "https://imagizer.imageshack.com/img924/6395/ku1oVm.png",
+      "https://imagizer.imageshack.com/img922/9628/uYp7PD.png",
+      "https://imagizer.imageshack.com/img923/4379/g9JN9C.png",
+      "https://imagizer.imageshack.com/img922/8421/a14QFI.png",
     ],
     additional: [
       {
@@ -292,7 +292,7 @@ const projectsData = [
     id: 8,
     title: "Point!",
     category: "Website",
-    cover: "https://i.ibb.co.com/6RbLtHXc/bbbbbbb.png",
+    cover: "https://imagizer.imageshack.com/img924/5430/xvgvmJ.png",
     type: "Front-End",
     summary:
       "Final Submission: Menjadi Front-End Web Developer Expert - Dicoding Indonesia",
@@ -312,17 +312,17 @@ const projectsData = [
       "Web Vitals Optimization",
     ],
     gallery: [
-      "https://i.ibb.co.com/yJGQhYK/2025-02-28-17-01-dicoding-point-restaurant-vercel-app.png",
-      "https://i.ibb.co.com/SwpkSNqc/2025-02-28-16-59-dicoding-point-restaurant-vercel-app.png",
-      "https://i.ibb.co.com/Ld4Dpz8F/2025-02-28-19-15-dicoding-point-restaurant-vercel-app.png",
-      "https://i.ibb.co.com/2GbqNjd/download-1.png",
-      "https://i.ibb.co.com/LzZvLC5V/aaaaa.png",
-      "https://i.ibb.co.com/fGMwmPJC/readfile.png",
-      "https://i.ibb.co.com/F4Wr85JY/readfile-1.png",
-      "https://i.ibb.co.com/ksC6dTJw/readfile-2.png",
-      "https://i.ibb.co.com/rKvwfBGt/readfile-3.png",
-      "https://i.ibb.co.com/CK3SFfvW/readfile-4.png",
-      "https://i.ibb.co.com/GvpktN66/readfile-5.png"
+      "https://imagizer.imageshack.com/img923/4110/EtmeVZ.png",
+      "https://imagizer.imageshack.com/img923/1731/OfTCXU.png",
+      "https://imagizer.imageshack.com/img923/6356/c83drO.png",
+      "https://imagizer.imageshack.com/img924/6901/N7OU31.png",
+      "https://imagizer.imageshack.com/img922/8899/ST64JW.png",
+      "https://imagizer.imageshack.com/img922/1200/N5eQnK.png",
+      "https://imagizer.imageshack.com/img922/3549/g8len7.png",
+      "https://imagizer.imageshack.com/img922/6913/Kh8H1Q.png",
+      "https://imagizer.imageshack.com/img923/834/gUsDEH.png",
+      "https://imagizer.imageshack.com/img924/4223/OMK3gy.png",
+      "https://imagizer.imageshack.com/img923/2947/Y9MzWB.png"
     ],
     additional: [
       {
@@ -363,7 +363,7 @@ const projectsData = [
     id: 11,
     title: "Literify",
     category: "AI-Powered App",
-    cover: "https://i.ibb.co.com/rftSb9Gs/Untitled-Presentation-43.png",
+    cover: "https://imagizer.imageshack.com/img923/5736/hZknYq.png",
     type: "Android Development",
     summary: "Capstone Project: Literify - Bangkit Academy 2024",
     description: 
@@ -392,14 +392,14 @@ const projectsData = [
       "Firebase",
     ],
     gallery: [
-      "https://i.ibb.co.com/wh7PN0Jc/Screenshot-2024-12-12-23-09-52-995-com-literify.jpg",
-      "https://i.ibb.co.com/fYp1V6hj/Screenshot-2024-12-12-23-10-01-271-com-google-android-gms.jpg",
-      "https://i.ibb.co.com/vvHL3vyW/Screenshot-2024-12-12-23-10-03-314-com-google-android-gms.jpg",
-      "https://i.ibb.co.com/4gfC3bC0/Screenshot-2024-12-12-23-10-06-686-com-literify.jpg",
-      "https://i.ibb.co.com/q3w0s8fb/Screenshot-2024-12-12-23-07-51-419-com-literify.jpg",
-      "https://i.ibb.co.com/LdkJ8RBH/Screenshot-2024-12-12-23-07-54-273-com-literify.jpg",
-      "https://i.ibb.co.com/xd3Mtr3/image0.jpg",
-      "https://i.ibb.co.com/6JX9ttZS/Screenshot-2024-12-12-23-07-56-439-com-literify.jpg",
+      "https://imagizer.imageshack.com/img922/391/gvoSzE.jpg",
+      "https://imagizer.imageshack.com/img923/3244/4jAr95.jpg",
+      "https://imagizer.imageshack.com/img924/16/SkAyPq.jpg",
+      "https://imagizer.imageshack.com/img922/9556/s95ow4.jpg",
+      "https://imagizer.imageshack.com/img923/1104/QEnyKI.jpg",
+      "https://imagizer.imageshack.com/img922/8971/jb7pDj.jpg",
+      "https://imagizer.imageshack.com/img922/9361/7BAJ83.jpg",
+      "https://imagizer.imageshack.com/img923/2463/erVb7W.jpg",
     ],
     additional: [
       {

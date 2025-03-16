@@ -2,7 +2,10 @@ export const en = {
   HELLO: "Hello, I'm Subhan S",
   ABOUT_ME: "About Me",
   ABOUT_ME_DESC:
-    "Hola! \n I'm an Undergraduate Informatics at Gunadarma University, actively involved in several web & software development projects, in order to continue to deepen knowledge & expand experience in these fields.",
+    "Hola! I'm an Informatics undergraduate at Gunadarma University with a passion for software development.\n\n" + 
+    "I specialize in web, backend, and mobile development, constantly exploring new technologies to enhance my skills and build impactful solutions. " +
+    "I enjoy solving complex problems, optimizing performance, and creating seamless user experiences.\n\n" +
+    "Beyond coding, I'm always eager to learn, collaborate, and contribute to innovative projects that drive meaningful change.\n\n",
   SKILLS: "Skills",
   PROJECTS: "Projects",
   REACH_OUT: "Reach Out",
