@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Card } from "flowbite-react";
@@ -41,11 +39,11 @@ const BigCard = ({
   return (
     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
       <Card
-        className="flex flex-col min-h-[400px] max-h-[400px] min-w-[324px] max-w-[324px] overflow-hidden"
+        className="dark:bg-[#31363F] mx-auto flex flex-col max-w-[20rem] h-[25rem] overflow-hidden"
         renderImage={() => (
           <div className="relative">
             <img
-              className="w-full h-[180px]"
+              className="w-full h-[11rem]"
               onError={() => setValidImg(DEFAULT_IMG)}
               src={validImg}
               alt={title}
@@ -56,13 +54,15 @@ const BigCard = ({
           </div>
         )}
       >
-        <div>
+        <div className="flex flex-col flex-grow overflow-hidden">
           <h1 className="text-2xl font-semibold tracking-tight text-white line-clamp-2">
             {title}
           </h1>
-          <h2 className="text-md font-medium text-gray-400">{type}</h2>
+          <h2 className="font-medium text-gray-400">{type}</h2>
           <br />
-          <p className="font-normal text-slate-400 line-clamp-3">{summary}</p>
+          <p className="font-normal text-slate-400 mt-2 max-[350px]:line-clamp-1 line-clamp-3">
+            {summary}
+          </p>
         </div>
       </Card>
     </motion.div>

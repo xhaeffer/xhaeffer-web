@@ -29,9 +29,9 @@ const AboutMe = () => {
 
   return (
     <section id="about_me" className="bg-[#222831] px-10 py-8">
-      <div data-aos="fade-up" className="mx-auto max-w-md">
+      <div data-aos="fade-up" className="mx-auto max-w-sm md:max-w-xl">
         <Heading text={ABOUT_ME} />
-        <p className="text-white/80 text-justify">{ABOUT_ME_DESC}</p>
+        <p className="text-white/90 text-[1.15rem] font-light whitespace-pre-line">{ABOUT_ME_DESC}</p>
         <div className="flex justify-center mt-10 gap-2">
           {socialMedia.map((social, index) => (
             <Link key={index} to={social.link} target="_blank">

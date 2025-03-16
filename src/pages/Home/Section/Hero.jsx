@@ -65,7 +65,11 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
           whileHover={{
             y: [0, -10, 0],
-            transition: { repeat: Infinity, duration: 0.3 },
+            transition: { repeat: Infinity, duration: 0.4 },
+          }}
+          whileTap={{
+            y: [0, -12, 0, -12, 0, -12, 0],
+            transition: { duration: 0.6 },
           }}
           className="hidden sm:flex w-72"
           src="/img/stelle.png"

@@ -12,11 +12,13 @@ function Home() {
         <Navbar />
       </header>
 
-      <Hero />
-      <AboutMe />
-      <Skills />
-      <Projects />
-      <Contact />
+      <main className="pt-[3.7rem] min-h-screen">
+        <Hero />
+        <AboutMe />
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
     </section>
   );
 }

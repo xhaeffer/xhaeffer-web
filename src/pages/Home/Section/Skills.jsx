@@ -14,7 +14,7 @@ const Skills = () => {
         <Heading text={SKILLS} />
         <div className="mx-auto max-w-md">
           {skillData.map((skill, index) => (
-            <div key={index} className="mb-6">
+            <div key={index} className="mb-6" data-aos="fade-up">
               <Subheading text={skill.category} />
               <div className="flex flex-wrap gap-4 mt-4 justify-center">
                 {skill.icons.map((icon) => (
