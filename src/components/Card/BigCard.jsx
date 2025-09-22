@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Card } from "flowbite-react";
 import PropTypes from "prop-types";
@@ -12,30 +11,6 @@ const BigCard = ({
   category = "Category",
   summary = "Summary",
 }) => {
-  const [validImg, setValidImg] = useState(img);
-
-  useEffect(() => {
-    const controller = new AbortController();
-    const { signal } = controller;
-
-    const checkImage = async (url) => {
-      try {
-        const res = await fetch(url, { method: "HEAD", signal });
-        if (!res.ok) throw new Error("Image not available");
-
-        setValidImg(url);
-      } catch {
-        setValidImg(DEFAULT_IMG);
-      }
-    };
-
-    if (img !== DEFAULT_IMG) {
-      checkImage(img);
-    }
-
-    return () => controller.abort();
-  }, [img]);
-
   return (
     <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1 }}>
       <Card
@@ -44,8 +19,8 @@ const BigCard = ({
           <div className="relative">
             <img
               className="w-full h-[11rem]"
-              onError={() => setValidImg(DEFAULT_IMG)}
-              src={validImg}
+              onError={(e) => (e.currentTarget.src = DEFAULT_IMG)}
+              src={img}
               alt={title}
             />
             <div className="absolute top-2 right-2 bg-black text-white text-xs px-2 py-1 rounded">
