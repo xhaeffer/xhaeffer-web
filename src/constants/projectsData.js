@@ -1,55 +1,72 @@
+let id = 1;
+
 const projectsData = [
   {
-    id: 1,
-    title: "SuikaCore",
+    id: id++,
+    title: "SuikaAPI",
     category: "Backend as a Service (BaaS)",
     cover: "https://imagizer.imageshack.com/img924/4957/QOwMfs.png",
     type: "Back-End Development",
-    summary: "A monolithic Backend as a Service (BaaS) providing API solutions for the Suika ecosystem.",
-    description: "SuikaCore is a monolithic backend system that serves as the core API provider for all Suika products. "+
-                 "It utilizes Node.js and Express.js to build a scalable REST API, with MySQL as its primary database managed via Sequelize.\n\n"+
-                 "Authentication and additional features are supported through Firebase, while AI capabilities leverage OpenAI and Google Cloud Vertex AI. "+
-                 "Other integrations include Midtrans for payment processing, ensuring robust and secure backend services.",
+    summary:
+      "A private Backend as a Service (BaaS) powering the entire SuikaStudio ecosystem.",
+    description:
+      "SuikaAPI is the central backend system that provides RESTful APIs for all SuikaStudio products. " +
+      "It is built with Node.js and Express.js, with several endpoints implemented in Go for high-performance workloads, " +
+      "and Elysia.js for modern, lightweight API handling.\n\n" +
+      "The API uses MySQL as its primary database with Sequelize as the ORM, and Redis for caching and performance improvements. " +
+      "Firebase is currently used for authentication and token handling, with future plans to leverage more of its services such as Firestore. " +
+      "SuikaAPI powers multiple services including FakeSaldo, LokerKerja, SuikaBot, and more.\n\n" +
+      "API documentation is generated automatically via OpenAPI/Swagger. Planned enhancements include RabbitMQ for message queuing " +
+      "and a potential migration from MySQL to PostgreSQL.\n\n" +
+      "Third-party integrations such as Midtrans enable reliable and secure payment processing throughout the ecosystem.",
     tags: [
+      "JavaScript",
+      "TypeScript",
       "Node.js",
       "Express.js",
+      "Elysia.js",
+      "Go",
+      "Gin",
+      "Python",
+      "FastAPI",
       "REST API",
       "MySQL",
+      "PostgreSQL",
       "Sequelize",
+      "Redis",
       "Firebase",
-      "Google Cloud",
-      "Microsoft Azure",
-      "Generative AI",
-      "Vertex AI",
-      "Open AI",
+      "Swagger",
+      "OpenAPI",
+      "RabbitMQ",
+      "Backend Development",
+      "Payment Integration",
       "Midtrans",
-      "Payment Integration"
     ],
     gallery: [
       "https://imagizer.imageshack.com/img922/5273/dvaCTZ.jpg",
-      "https://imagizer.imageshack.com/img924/3888/Alnnbh.jpg"
+      "https://imagizer.imageshack.com/img924/3888/Alnnbh.jpg",
     ],
     additional: [
       {
-        title: "Github (Private)",
-        link: "https://github.com/SuikaBot",
-      }
-    ]
+        title: "GitHub (Private)",
+        link: "https://github.com/SuikaStudio",
+      },
+    ],
   },
   {
-    id: 2,
+    id: id++,
     title: "SuikaBot",
     category: "Multipurpose Chatbot",
     cover: "https://imagizer.imageshack.com/img923/3047/BfDVs4.png",
     type: "Chatbot Development",
-    summary: 
+    summary:
       "A WhatsApp chatbot designed to enhance various tasks with features such as GenAI, file downloader, file converter, text translator, and more.",
     description:
-      "SuikaBot is built using Node.js and primarily utilizes whatsapp-web.js / baileys for WhatsApp automation.\n\n" + 
-      "It heavily relies on SuikaCore for backend services, including database operations (MySQL) and almost all of its core features. " +
+      "SuikaBot is built using Node.js and primarily utilizes Baileys for WhatsApp automation.\n\n" +
+      "It heavily relies on SuikaAPI for backend services, including database operations (MySQL) and almost all of its core features. " +
       "The chatbot is designed to be modular, allowing for easy addition of new features and services.\n\n" +
       "The main features of SuikaBot include:\n" +
-      "- Generative AI (using Gemini-1.5, Imagen3, GPT-4, DALL-E3)\n" +
+      "- Generative AI (using Google Gemini, Imagen3, GPT, DALL-E3)\n" +
       "- Downloader (using Cobalt)\n" +
       "- Converter (using ConvertAPI)\n" +
       "- Translator (using DeepL)\n" +
@@ -62,9 +79,8 @@ const projectsData = [
       "And more features will be added as needed.",
     tags: [
       "Node.js",
-      "Whatsapp-web.js",
       "Baileys",
-      "SuikaCore",
+      "SuikaAPI",
       "DeepL",
       "Generative AI",
       "Vertex AI",
@@ -77,143 +93,165 @@ const projectsData = [
     ],
     gallery: [
       "https://imagizer.imageshack.com/img924/8596/5o5OQ1.jpg",
-      "https://imagizer.imageshack.com/img923/244/5ZaDEa.jpg"
+      "https://imagizer.imageshack.com/img923/244/5ZaDEa.jpg",
     ],
     additional: [
       {
         title: "Available Bots",
-        link: "https://suika.pw"
+        link: "https://bot.suikastd.dev",
       },
       {
         title: "Github (Private)",
-        link: "https://github.com/SuikaBot",
+        link: "https://github.com/SuikaStudio",
       },
-    ]
+    ],
   },
   {
-    id: 3,
+    id: id++,
     title: "SuikaBot-GeminiAI",
     category: "Generative AI Chatbot",
     cover: "https://imagizer.imageshack.com/img923/3047/BfDVs4.png",
     type: "Chatbot Development",
-    summary: "An AI-powered WhatsApp chatbot utilizing Vertex AI for generative responses.",
-    description: 
+    summary:
+      "An AI-powered WhatsApp chatbot utilizing Google Gemini for generative responses.",
+    description:
       "SuikaBot-Gemini is a subset of SuikaBot, designed specifically for AI-driven interactions. " +
       "It is an advanced WhatsApp chatbot built using Node.js and whatsapp-web.js.\n\n" +
-      "Unlike SuikaBot, it doesn't rely on SuikaCore. Instead, it integrates Google Vertex AI to generate human-like responses " +
+      "Unlike SuikaBot, it doesn't rely on SuikaCore. Instead, it integrates Google Gemini API to generate human-like responses " +
       "and uses Firebase Firestore as its primary database.\n\n" +
       "The bot also utilizes Awilix for dependency injection, ensuring scalability and maintainability.",
-      tags: [
-        "Node.js",
-        "whatsapp-web.js",
-        "Generative AI",
-        "Vertex AI",
-        "Firebase",
-        "Awilix",
-        "Object-Oriented Programming",
-        "Clean Code",
+    tags: [
+      "Node.js",
+      "whatsapp-web.js",
+      "Generative AI",
+      "Google AI Studio",
+      "Firebase",
+      "Awilix",
+      "Object-Oriented Programming",
+      "Clean Code",
+    ],
+    gallery: [
+      "https://lh3.googleusercontent.com/pw/AP1GczMLlZVL5pOIj5NvZ88LmhOqTG1PSrZX-vDXphApOzgMOBUOH6effY43O5HqiCCTB8DjOWAuAuTRFAtcrULsYi3SCtmqjncQQki3sOtCgiD31Az4UIWCN64fa26HF3MGdse58_6-xZHMPDBYnRgqSO1b=w715-h538-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczOS-qP9Fv9LiyzrDiTtZ3Q8delVbVM3n3wrDuPVY7q4brTdo6Kn1dF_zSajJyGNK66moF6GKmem4Upth4ToyxSOCI8Z8dRdPZ0ucNB7S35J09_yYmnBDwl7LXBXs0KgL8_hSQA_kmV4wU5lVaCAFC82=w781-h555-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczNpH_mISi754V7shYKqYjKofT3nAAq0HTMnMYg3RgMnKT2qfZbXBxMn_05oSswICsi5bHDDVUkq1GgSDkm2jY2OE1piCJEYBeXl1GFfMj7J69IMqanMCrySiuaxmqOFG9f-dHyJ3iX29te-H78q_3FA=w727-h516-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczP5P2gozPVyXQgqlb1taURmLIP7O0Zh4kgYHK0rsYywLMvUwL6BSs0MP8W-cx3ReAQvpqq9jqT2-VoO-Gi2rZNb7_8pyE296OboAH1bve4S81lJGm3Yg7EdxS7xOELcrpY79VRh2khjMjnK3DaMH7PD=w770-h548-s-no-gm?authuser=0"
+    ],
+    additional: [
+      {
+        title: "Host a Bot",
+        link: "https://bot.suikastd.dev",
+        disabled: true,
+      },
+      {
+        title: "Github",
+        link: "https://github.com/SuikaStudio/SuikaBot-Gemini",
+      },
+    ],
+  },
+  {
+    id: id++,
+    title: "SuikaBot-Halu",
+    category: "AI Roleplay Chatbot",
+    cover: "https://imagizer.imageshack.com/img923/3047/BfDVs4.png",
+    type: "Chatbot Development",
+    summary:
+      "A WhatsApp chatbot connected to Character.ai for immersive AI roleplay conversations.",
+    description:
+      "SuikaBot-Halu is a variant of SuikaBot, created to deliver engaging and personalized roleplay chat experiences. " +
+      "It is built with Node.js and Baileys, and integrates with Character.ai to enable interactive conversations " +
+      "with custom AI personas.",
+    tags: [
+      "Node.js",
+      "Baileys",
+      "Character.ai",
+      "AI Roleplay",
+      "Entertainment",
+      "Clean Code",
+      "Modular Architecture",
     ],
     gallery: [],
     additional: [
       {
-        title: "Host a Bot",
-        link: "https://suika.pw",
-        disabled: true
+        title: "Available Bots",
+        link: "https://bot.suikastd.dev",
       },
       {
-        title: "Github",
-        link: "https://github.com/SuikaBot/SuikaBot-Gemini",
+        title: "Github (Private)",
+        link: "https://github.com/SuikaStudio",
       },
-    ]
+    ],
   },
   {
-    id: 4,
-    title: "SuikaBot-WaIntip",
-    category: "WhatsApp Chatbot",
-    cover: "https://imagizer.imageshack.com/img923/3047/BfDVs4.png",
-    type: "Chatbot Development",
-    summary: "A WhatsApp chatbot that allows users to view one-time messages (photos, videos, and voice notes) without limitations.",
+    id: id++,
+    title: "DigitalDiary.ku",
+    category: "Social Emotional Learning Platform",
+    cover:
+      "https://lh3.googleusercontent.com/pw/AP1GczPNlADKXD1uguzrR37tYXUTEJkElnoXlHKxCWMiFLXGvQjKkeCcUw1BvYf778KX-1oeRC-CelvEfOrFX0ac8H8y5sVJcAH5ACHdrSCIkPL-R6iSW59qrQK8_alT-kHnyBskskpOTPMPQzN8xLuGRtOA=w800-h400-s-no-gm?authuser=0",
+    type: "Full-Stack Development",
+    summary:
+      "A journaling platform that fosters Social Emotional Learning (SEL) through daily reflections, mood tracking, and habit building — designed for students and usable independently or with teacher support.",
     description:
-      "SuikaBot-WaIntip is a subset of SuikaBot, designed to bypass WhatsApp’s one-time view restriction and let users retrieve viewed media " +
-      "It is an advanced WhatsApp chatbot built using Node.js and whatsapp-web.js.\n\n" +
-      "Key features of Suika-WaIntip include:\n" +
-      "- Bypass one-time view messages (photos, videos, and voice notes)\n" +
-      "- Automatically retrieve and resend media to users\n" +
-      "- Simple and user-friendly command system\n\n" +
-      "Unlike SuikaBot, it doesn't rely on SuikaCore. Instead, Suika-WaIntip operates independently, processing media directly within the bot without requiring external backend services.\n\n" +
-      "How it works:\n" +
-      "- When a user receives a one-time view message, the bot intercepts and bypasses the restriction.\n" +
-      "- The bot then retrieves the media and resends it to the user, allowing them to view and save it without limitations.\n\n",
+      "DigitalDiary.ku is a full-stack web application that supports Social Emotional Learning (SEL) for students of various levels. " +
+      "The platform enables students to write daily journals, track moods, monitor habits, and participate in reflective challenges. " +
+      "It is school-agnostic — meaning students can use it independently, while teachers have the option to provide guidance and feedback through a dedicated dashboard.\n\n" +
+      "The application is built using Next.js with Firestore as the primary database and Firebase Authentication for secure access. " +
+      "For the front-end experience, shadcn is integrated to provide a modern and accessible UI component system.\n\n" +
+      "DigitalDiary.ku creates a safe space for students to express themselves, build emotional awareness, and develop positive habits, " +
+      "while giving educators optional tools to observe and support their students’ growth.",
     tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
       "Node.js",
-      "whatsapp-web.js",
-      "One-Time Message Viewer",
-    ],
-    gallery: [
-      "https://imagizer.imageshack.com/img924/2233/Xy90NS.png",
-      "https://imagizer.imageshack.com/img924/9659/KXYITh.png"
-    ],
-    additional: [
-      {
-        title: "Host a Bot",
-        link: "https://suika.pw",
-        disabled: true
-      },
-      {
-        title: "Github",
-        link: "https://github.com/muhismail015/WA-Intip",
-      },
-    ]
-  },
-  {
-    id: 5,
-    title: "SuikaBot (Website)",
-    category: "Website",
-    cover: "https://imagizer.imageshack.com/img924/938/Pfvx2T.jpg",
-    type: "Front-End Development",
-    summary: "A landing page and management interface for SuikaBot and SuikaCore.",
-    description: 
-      "SuikaWeb is a web-based platform designed to showcase information about SuikaBot while also providing tools to manage SuikaCore virtual machines.\n\n" +
-      "Built with React and Vite, it integrates various modern front-end technologies such as Flowbite, Tailwind CSS, Redux Toolkit, etc." +
-      "The platform offers a seamless experience for both users and administrators.",
-    tags: [
       "React",
-      "Vite",
-      "Flowbite",
-      "Tailwind CSS",
-      "Redux Toolkit",
-      "Firebase",
-      "Vercel",
+      "Next.js",
+      "Firestore",
+      "Firebase Authentication",
+      "shadcn",
+      "Education Technology",
+      "Social Emotional Learning",
+      "Journaling",
+      "Mood Tracking",
+      "Habit Tracking",
+      "Action Reflection",
     ],
     gallery: [
-      "https://imagizer.imageshack.com/img924/938/Pfvx2T.jpg",
-      "https://imagizer.imageshack.com/img924/7889/vkLDLc.jpg",
-      "https://imagizer.imageshack.com/img922/566/WDhrOS.jpg",
-      "https://imagizer.imageshack.com/img923/7092/9accRm.jpg",
-      "https://imagizer.imageshack.com/img922/4607/3oGPni.jpg",
-      "https://imagizer.imageshack.com/img922/5273/dvaCTZ.jpg",
-      "https://imagizer.imageshack.com/img924/3888/Alnnbh.jpg"
+      "https://lh3.googleusercontent.com/pw/AP1GczNUrH9U5W1lfYmIeAWV_7UHhwbxRWZwiDUC2UQPxNIEcMRbDFz1FuLDgqcO2ov3_pD0R3JdgOqFxhlasD9n7a95tb5Fcaf4Yi7GkWRWeumGNzibv_59ulbMrjIoNFzvnMWJAPBHhSzmv9nmpyrZoaVe=w1920-h887-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczNosGBWJLx-M7n2eAThPlLYHgICEUXsLkaRWs4MbgLCUXiv-iNs92HIZhlWrMGadm3EbhQOXYLSPGTs4cHrLqdDxdIRNWS7kUA1KxUi7NNI7KvsYPsj0pfX0JFB2VqZURnMkre0PhOZBbe-3onIyGPF=w957-h515-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczNDUAe9S5Q2NLingwrCYON8SSMPVm_5IsqNgVQjqOPdKMFiiW0p4-YSjD1xf1WzorHRYsApQaA7GW8TP1nwgoVA6ZMw4jVR-tEGqyHYDMaJb5utzAnBCKGsT7_sNOLOega0jC1OXmUsUuPwwUyKw2jV=w1900-h888-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczMuvxcX-dYKxwiBeap3RASsdznpKXLeNe3E55JCMx8DbZbRq8k7x8T14CO7H9rN09wxRmgJ3GnWs90EtOUTVvoP5R9DbPtPmRbcuzgkcemA4DCP2LOgUi--zB6W62C3K9_12XhpBQ17V4Lst6cBbtCq=w952-h687-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczMN7quM5OVFURbG_l2F02fCjFHUGPlGL8Drp3IVXknNL5N9mqtUv0iCyLP6R_b2x2cFkZA7arrjofcBbRdBbhxzi9VbQgBRs69ZfgzrKluzv7E-iLb41bns2xuwq1lGg4dSR5atz-8BrA8zf92oBc4G=w953-h509-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczPv7a0ojPzdQ7txMFEeTHmGusRlwJjGTrh50A5Rk-QVefreeqfUj1VP66qMiEWn-3BLuV6Ub7bkw6xSDkVTgCelLybHUtq6aa3UgmgXVXPUG5aJ5kR_HSnn9aCHXOL6ZpCPv0D660s9D8IWcDHSVybu=w1898-h885-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczPtBng_dDvnuMtOd6upXruZzzJ_mcDSWeOBKuvsEPpglmAE-epfCm_0lUz8s-ynHvxdTvBjZsbzCpjHmdfUWjbVGQoawYi93ATuaxvCxaUNkEjsXSHUYMJyL3zBHBLNNORSrbkgQKmTzVqYfBA3XOvi=w952-h669-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczMBpPOnym0Q2IaywmWyBKu65XegSXupcavZIRnvCUZBeK6htdoF3Y_pJy6-JezjktJitj3Cjke_SGK39S4_d9uFp5C8bpM25iXFRVMJQuv5XhjcWd2240e1pS5TS4a31yLIhbH_84A7QeeRogqFGFqz=w952-h587-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczPE_4zLHvOfguB4nPi_uHvx2XPmoZB0a9Nk4EwJNmym57yrVC9Zbc6Tx9FXh5XxYreCTqLw1FhgZ3OBNx-tfoohtev-gV6r9ZOsjgLQFv6ZtbWrPMFmmiLv7sbeVlhycdGC1fT6mby-ctRKMlfXL4KD=w1920-h891-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczPU75zkzCs-ZtyeiHnST6cc9D__bXZXpqbQnN-r5FYyHIIIZnqXgUqj0JWnLNzSrYa2c8XSSgTbqNOhmTlPLZ8wX4Cc0pl1IxCSklWzdaRhDdDBGKQLfIi-AbCtQ1WNxu3bcPgURN0Uwb3zbrOpVAkR=w1901-h881-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczOqpb0Jni3cIqcOyRFaEvTZDECeVV6LFOxFz1VAxYxoB7UbYZDlB21scqAXADM6xmbqeitWqaoHIky-KxCHKCMBywuMKCsYYNqunBq6s8rJssNHHdiDQlRC9zS7ibdJnj2AaZbnVSoY-I-x5uc_msSd=w1900-h885-s-no-gm?authuser=0",
     ],
     additional: [
+      {
+        title: "Landing Page",
+        link: "https://sites.google.com/view/digitaldiary-ku/home",
+      },
       {
         title: "Live View",
-        link: "https://suika.pw",
+        link: "https://digitaldiaryku.com/",
       },
       {
-        title: "Github",
-        link: "https://github.com/SuikaBot/SuikaWeb",
+        title: "Github (Private)",
+        link: "https://github.com/xhaeffer/DigitalDiaryku-App",
       },
-    ]
+    ],
   },
   {
-    id: 6,
+    id: id++,
     title: "BajoBliss (BaaS)",
     category: "Backend as a Service (BaaS)",
-    cover:
-      "https://imagizer.imageshack.com/img924/5400/M3eOOh.png",
+    cover: "https://imagizer.imageshack.com/img924/5400/M3eOOh.png",
     type: "Back-End Development",
     summary: "Capstone Project: BajoBliss - Baparekraf Digital Talent 2024",
-    description: 
+    description:
       "BajoBliss (BaaS) provides backend services for the BajoBliss platform, ensuring seamless data management and business logic execution. " +
       "It supports local businesses by offering API-based services to facilitate product listings, bookings, and user management.\n\n" +
       "The system is built using Hapi.js with MySQL as its database, ensuring efficient data processing and scalability. " +
@@ -229,7 +267,7 @@ const projectsData = [
       "JWT",
       "Role-Based Access Control",
       "Midtrans",
-      "Payment Integration"
+      "Payment Integration",
     ],
     gallery: [],
     additional: [
@@ -241,17 +279,16 @@ const projectsData = [
         title: "Github (new)",
         link: "https://github.com/BajoBliss/back",
       },
-    ]
+    ],
   },
   {
-    id: 7,
+    id: id++,
     title: "BajoBliss: Discover Labuan Bajo's Treasures",
     category: "Website",
-    cover:
-      "https://imagizer.imageshack.com/img924/5400/M3eOOh.png",
+    cover: "https://imagizer.imageshack.com/img924/5400/M3eOOh.png",
     type: "Front-End Development",
     summary: "Capstone Project: BajoBliss - Baparekraf Digital Talent 2024",
-    description: 
+    description:
       "BajoBliss is a digital platform designed to showcase and promote Labuan Bajo's local products to global tourists.\n\n" +
       "The front-end is built using a mobile-first approach, ensuring accessibility across devices. " +
       "Developed with HTML, CSS, and JavaScript, it follows Progressive Web App (PWA) principles to enhance user experience with offline capabilities. " +
@@ -289,7 +326,7 @@ const projectsData = [
     ],
   },
   {
-    id: 8,
+    id: id++,
     title: "Point!",
     category: "Website",
     cover: "https://imagizer.imageshack.com/img924/5430/xvgvmJ.png",
@@ -322,7 +359,7 @@ const projectsData = [
       "https://imagizer.imageshack.com/img922/6913/Kh8H1Q.png",
       "https://imagizer.imageshack.com/img923/834/gUsDEH.png",
       "https://imagizer.imageshack.com/img924/4223/OMK3gy.png",
-      "https://imagizer.imageshack.com/img923/2947/Y9MzWB.png"
+      "https://imagizer.imageshack.com/img923/2947/Y9MzWB.png",
     ],
     additional: [
       {
@@ -336,7 +373,7 @@ const projectsData = [
     ],
   },
   {
-    id: 9,
+    id: id++,
     title: "Dicoding Forum",
     category: "Website",
     cover: "",
@@ -345,28 +382,16 @@ const projectsData = [
     description: "",
     tags: [],
     gallery: [],
-    additional: []
+    additional: [],
   },
   {
-    id: 10,
-    title: "Klinik Ridsu",
-    category: "Backend as a Service (BaaS)",
-    cover: "",
-    type: "Back-End Development",
-    summary: "",
-    description: "",
-    tags: [],
-    gallery: [],
-    additional: []
-  },
-  {
-    id: 11,
+    id: id++,
     title: "Literify",
     category: "AI-Powered App",
     cover: "https://imagizer.imageshack.com/img923/5736/hZknYq.png",
     type: "Android Development",
     summary: "Capstone Project: Literify - Bangkit Academy 2024",
-    description: 
+    description:
       "Literify is an AI-powered mobile app designed to address Indonesia's literacy challenges by offering personalized book recommendations and incorporating gamification to engage users, especially younger audiences. \n\n" +
       "Built with Kotlin and Android Jetpack, Literify utilizes machine learning models powered by TensorFlow and Tesseract OCR for text recognition.\n\n" +
       "Key Features:\n" +
@@ -410,10 +435,10 @@ const projectsData = [
         title: "APK",
         link: "https://github.com/Literify/MD/releases/tag/beta",
       },
-    ]
+    ],
   },
   {
-    id: 12,
+    id: id++,
     title: "MRT Jakarta Emergency Awareness",
     category: "Android App",
     cover: "",
@@ -422,7 +447,7 @@ const projectsData = [
     description: "",
     tags: [],
     gallery: [],
-    additional: []
+    additional: [],
   },
 ];
 
