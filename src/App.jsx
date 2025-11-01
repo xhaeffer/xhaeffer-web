@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 
 import Footer from "./components/Layout/Footer";
 import Home from "./pages/Home/Home";
+import NotFound from "./pages/NotFound/NotFound";
 import ProjectDetail from "./pages/ProjectDetail/ProjectDetail";
 
 const App = () => {
@@ -9,6 +10,7 @@ const App = () => {
     <>
       <main>
         <Routes>
+          <Route path="*" element={<NotFound />} />
           <Route path="/" element={<Home />} />
           <Route path="/project/:id" element={<ProjectDetail />} />
         </Routes>
