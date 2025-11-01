@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 import { HiOutlineArrowLeft } from "react-icons/hi";
 
 import Header from "./Section/Header";
@@ -12,16 +12,20 @@ import projectsData from "../../constants/projectsData";
 
 const ProjectDetail = () => {
   const { id } = useParams();
+  const navigate = useNavigate();
+
   const [validDesc, setValidDesc] = useState("");
 
   const projectById = projectsData.find(
-    (project) => project.id === parseInt(id),
+    (project) => project.id === id,
   );
 
-  const { title, category, cover, description, tags, gallery, additional } =
-    projectById;
-
   useEffect(() => {
+    if (!projectById) {
+      navigate("/404", { replace: true });
+      return;
+    }
+
     const checkDesc = async (url) => {
       try {
         new URL(url);
@@ -35,12 +39,19 @@ const ProjectDetail = () => {
       }
     };
 
-    checkDesc(description);
+    checkDesc(projectById.description);
     window.scrollTo(0, 0);
-  }, [description, id]);
+  }, [projectById]);
+
+  if (!projectById) {
+    return null;
+  }
+
+  const { title, category, cover, tags, gallery, additional } =
+    projectById;
 
   return (
-    <div className="bg-[#161B22] px-8 py-8 lg:px-52 min-h-screen">
+    <section className="bg-[#161B22] px-8 py-8 lg:px-52 min-h-screen" id="ProjectDetail">
       <Link className="flex items-center" to="/">
         <HiOutlineArrowLeft className="text-white h-5 w-5 mr-2" />
         <p className="text-white">Back To Home</p>
@@ -58,7 +69,7 @@ const ProjectDetail = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

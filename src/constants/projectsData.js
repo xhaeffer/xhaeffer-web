@@ -1,8 +1,6 @@
-let id = 1;
-
 const projectsData = [
   {
-    id: id++,
+    id: "SuikaAPI",
     title: "SuikaAPI",
     category: "Backend as a Service (BaaS)",
     cover: "https://imagizer.imageshack.com/img924/4957/QOwMfs.png",
@@ -56,7 +54,7 @@ const projectsData = [
     ],
   },
   {
-    id: id++,
+    id: "SuikaBot",
     title: "SuikaBot",
     category: "Multipurpose Chatbot",
     cover: "https://imagizer.imageshack.com/img923/3047/BfDVs4.png",
@@ -109,7 +107,7 @@ const projectsData = [
     ],
   },
   {
-    id: id++,
+    id: "SuikaBot-Gemini",
     title: "SuikaBot: GeminiAI",
     category: "Generative AI Chatbot",
     cover: "https://imagizer.imageshack.com/img923/3047/BfDVs4.png",
@@ -151,7 +149,7 @@ const projectsData = [
     ],
   },
   {
-    id: id++,
+    id: "SuikaBot-Halu",
     title: "SuikaBot: Halu",
     category: "AI Roleplay Chatbot",
     cover: "https://imagizer.imageshack.com/img923/3047/BfDVs4.png",
@@ -184,7 +182,7 @@ const projectsData = [
     ],
   },
   {
-    id: id++,
+    id: "DigitalDiaryku",
     title: "DigitalDiary.ku",
     category: "Social Emotional Learning Platform",
     cover:
@@ -244,7 +242,7 @@ const projectsData = [
     ],
   },
   {
-    id: id++,
+    id: "BajoBliss",
     title: "BajoBliss: Discover Labuan Bajo's Treasures",
     category: "Tourism & Local Commerce Platform",
     cover: "https://imagizer.imageshack.com/img924/5400/M3eOOh.png",
@@ -317,7 +315,7 @@ const projectsData = [
     ],
   },
   {
-    id: id++,
+    id: "KafeKita-Management-System",
     title: "KafeKita Management System",
     category: "Café Management Platform",
     cover:
@@ -373,7 +371,7 @@ const projectsData = [
     ],
   },
   {
-    id: id++,
+    id: "Dicoding-Forum",
     title: "Dicoding Forum",
     category: "Forum Web App",
     cover:
@@ -422,7 +420,7 @@ const projectsData = [
     ],
   },
   {
-    id: id++,
+    id: "Point-Web",
     title: "Point!",
     category: "Restaurant Review Web App",
     cover: "https://imagizer.imageshack.com/img924/5430/xvgvmJ.png",
@@ -469,7 +467,7 @@ const projectsData = [
     ],
   },
   {
-    id: id++,
+    id: "Literify",
     title: "Literify",
     category: "Gamified AI Literacy App",
     cover: "https://imagizer.imageshack.com/img923/5736/hZknYq.png",
@@ -522,7 +520,7 @@ const projectsData = [
     ],
   },
   {
-    id: id++,
+    id: "MRT-Jakarta-Emergency-Awareness",
     title: "MRT Jakarta Emergency Awareness",
     category: "Public Safety Educational AR App",
     cover:
