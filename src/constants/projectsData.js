@@ -41,6 +41,8 @@ const projectsData = [
       "Backend Development",
       "Payment Integration",
       "Midtrans",
+      "OpenAI API",
+      "Google AI Studio",
     ],
     gallery: [
       "https://imagizer.imageshack.com/img922/5273/dvaCTZ.jpg",
@@ -81,15 +83,15 @@ const projectsData = [
       "Node.js",
       "Baileys",
       "SuikaAPI",
-      "DeepL",
       "Generative AI",
-      "Vertex AI",
       "Open AI",
+      "Google AI Studio",
       "Payment Integration",
       "Midtrans",
+      "DeepL",
       "Firebase",
-      "Google Cloud",
-      "Microsoft Azure",
+      "Clean Code",
+      "Modular Architecture",
     ],
     gallery: [
       "https://imagizer.imageshack.com/img924/8596/5o5OQ1.jpg",
@@ -108,7 +110,7 @@ const projectsData = [
   },
   {
     id: id++,
-    title: "SuikaBot-GeminiAI",
+    title: "SuikaBot: GeminiAI",
     category: "Generative AI Chatbot",
     cover: "https://imagizer.imageshack.com/img923/3047/BfDVs4.png",
     type: "Chatbot Development",
@@ -134,7 +136,7 @@ const projectsData = [
       "https://lh3.googleusercontent.com/pw/AP1GczMLlZVL5pOIj5NvZ88LmhOqTG1PSrZX-vDXphApOzgMOBUOH6effY43O5HqiCCTB8DjOWAuAuTRFAtcrULsYi3SCtmqjncQQki3sOtCgiD31Az4UIWCN64fa26HF3MGdse58_6-xZHMPDBYnRgqSO1b=w715-h538-s-no-gm?authuser=0",
       "https://lh3.googleusercontent.com/pw/AP1GczOS-qP9Fv9LiyzrDiTtZ3Q8delVbVM3n3wrDuPVY7q4brTdo6Kn1dF_zSajJyGNK66moF6GKmem4Upth4ToyxSOCI8Z8dRdPZ0ucNB7S35J09_yYmnBDwl7LXBXs0KgL8_hSQA_kmV4wU5lVaCAFC82=w781-h555-s-no-gm?authuser=0",
       "https://lh3.googleusercontent.com/pw/AP1GczNpH_mISi754V7shYKqYjKofT3nAAq0HTMnMYg3RgMnKT2qfZbXBxMn_05oSswICsi5bHDDVUkq1GgSDkm2jY2OE1piCJEYBeXl1GFfMj7J69IMqanMCrySiuaxmqOFG9f-dHyJ3iX29te-H78q_3FA=w727-h516-s-no-gm?authuser=0",
-      "https://lh3.googleusercontent.com/pw/AP1GczP5P2gozPVyXQgqlb1taURmLIP7O0Zh4kgYHK0rsYywLMvUwL6BSs0MP8W-cx3ReAQvpqq9jqT2-VoO-Gi2rZNb7_8pyE296OboAH1bve4S81lJGm3Yg7EdxS7xOELcrpY79VRh2khjMjnK3DaMH7PD=w770-h548-s-no-gm?authuser=0"
+      "https://lh3.googleusercontent.com/pw/AP1GczP5P2gozPVyXQgqlb1taURmLIP7O0Zh4kgYHK0rsYywLMvUwL6BSs0MP8W-cx3ReAQvpqq9jqT2-VoO-Gi2rZNb7_8pyE296OboAH1bve4S81lJGm3Yg7EdxS7xOELcrpY79VRh2khjMjnK3DaMH7PD=w770-h548-s-no-gm?authuser=0",
     ],
     additional: [
       {
@@ -150,7 +152,7 @@ const projectsData = [
   },
   {
     id: id++,
-    title: "SuikaBot-Halu",
+    title: "SuikaBot: Halu",
     category: "AI Roleplay Chatbot",
     cover: "https://imagizer.imageshack.com/img923/3047/BfDVs4.png",
     type: "Chatbot Development",
@@ -195,7 +197,7 @@ const projectsData = [
       "The platform enables students to write daily journals, track moods, monitor habits, and participate in reflective challenges. " +
       "It is school-agnostic — meaning students can use it independently, while teachers have the option to provide guidance and feedback through a dedicated dashboard.\n\n" +
       "The application is built using Next.js with Firestore as the primary database and Firebase Authentication for secure access. " +
-      "For the front-end experience, shadcn is integrated to provide a modern and accessible UI component system.\n\n" +
+      "For the front-end experience, Tailwind and shadcn is integrated to provide a modern and accessible UI component system.\n\n" +
       "DigitalDiary.ku creates a safe space for students to express themselves, build emotional awareness, and develop positive habits, " +
       "while giving educators optional tools to observe and support their students’ growth.",
     tags: [
@@ -208,10 +210,11 @@ const projectsData = [
       "Next.js",
       "Firestore",
       "Firebase Authentication",
+      "Tailwind CSS",
       "shadcn",
       "Education Technology",
       "Social Emotional Learning",
-      "Journaling",
+      "Digital Journaling",
       "Mood Tracking",
       "Habit Tracking",
       "Action Reflection",
@@ -231,10 +234,6 @@ const projectsData = [
     ],
     additional: [
       {
-        title: "Landing Page",
-        link: "https://sites.google.com/view/digitaldiary-ku/home",
-      },
-      {
         title: "Live View",
         link: "https://digitaldiaryku.com/",
       },
@@ -246,61 +245,45 @@ const projectsData = [
   },
   {
     id: id++,
-    title: "BajoBliss (BaaS)",
-    category: "Backend as a Service (BaaS)",
+    title: "BajoBliss: Discover Labuan Bajo's Treasures",
+    category: "Tourism & Local Commerce Platform",
     cover: "https://imagizer.imageshack.com/img924/5400/M3eOOh.png",
-    type: "Back-End Development",
-    summary: "Capstone Project: BajoBliss - Baparekraf Digital Talent 2024",
+    type: "Full-Stack Development",
+    summary: "Capstone Project: Baparekraf Digital Talent 2024",
     description:
-      "BajoBliss (BaaS) provides backend services for the BajoBliss platform, ensuring seamless data management and business logic execution. " +
-      "It supports local businesses by offering API-based services to facilitate product listings, bookings, and user management.\n\n" +
-      "The system is built using Hapi.js with MySQL as its database, ensuring efficient data processing and scalability. " +
-      "Authentication is handled via JWT with Role-Based Access Control (RBAC) to differentiate user and admin roles. " +
-      "Additionally, Midtrans is integrated for secure payment transactions.",
+      "BajoBliss is a full-stack digital platform developed to support local businesses (UMKM) in Labuan Bajo by promoting regional products to global tourists.\n\n" +
+      "As a Minimum Viable Product (MVP), BajoBliss integrates front-end and back-end systems to demonstrate the platform's potential for e-commerce and local business empowerment while maintaining scalability for future development.\n\n" +
+      "- **Front-End:**\n" +
+      "  - Built using HTML, CSS, and vanilla JavaScript with Webpack for modularization and performance optimization.\n" +
+      "  - Designed with a mobile-first and PWA approach for accessibility and reliability across devices.\n" +
+      "  - Planned refactor to Next.js to enhance maintainability, scalability, and developer experience.\n\n" +
+      "- **Back-End:**\n" +
+      "  - Developed with Hapi.js and MySQL, providing RESTful API services for user management, product listings, and bookings.\n" +
+      "  - Implements JWT-based authentication and Role-Based Access Control (RBAC) for secure and differentiated access.\n" +
+      "  - Planned migration to Elysia.js and PostgreSQL to improve performance, scalability, and adopt a more modern architecture.\n\n" +
+      "- **Key Features:**\n" +
+      "  - User registration and profile management\n" +
+      "  - Content and product management\n" +
+      "  - Booking and transaction handling\n" +
+      "  - Search, filter, and review systems for better user experience\n" +
+      "  - Wishlist functionality for saving products for future purchases\n\n" +
+      "This project emphasizes clean architecture, secure API design, and a meaningful impact by connecting Labuan Bajo’s local enterprises with a wider audience through technology.",
     tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Webpack",
       "Node.js",
       "Hapi.js",
       "REST API",
       "MySQL",
       "Sequelize",
-      "Authentication",
       "JWT",
       "Role-Based Access Control",
-      "Midtrans",
-      "Payment Integration",
-    ],
-    gallery: [],
-    additional: [
-      {
-        title: "Github (old)",
-        link: "https://github.com/lussyanast/bajobliss/tree/server",
-      },
-      {
-        title: "Github (new)",
-        link: "https://github.com/BajoBliss/back",
-      },
-    ],
-  },
-  {
-    id: id++,
-    title: "BajoBliss: Discover Labuan Bajo's Treasures",
-    category: "Website",
-    cover: "https://imagizer.imageshack.com/img924/5400/M3eOOh.png",
-    type: "Front-End Development",
-    summary: "Capstone Project: BajoBliss - Baparekraf Digital Talent 2024",
-    description:
-      "BajoBliss is a digital platform designed to showcase and promote Labuan Bajo's local products to global tourists.\n\n" +
-      "The front-end is built using a mobile-first approach, ensuring accessibility across devices. " +
-      "Developed with HTML, CSS, and JavaScript, it follows Progressive Web App (PWA) principles to enhance user experience with offline capabilities. " +
-      "The UI is designed to be intuitive, with automation testing implemented to maintain code quality and reliability.",
-    tags: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Mobile-First Approach",
       "Progressive Web Apps",
-      "Clean Code",
-      "Automation Testing",
+      "Clean Architecture",
+      "Mobile-First Design",
+      "Service Workers",
     ],
     gallery: [
       "https://imagizer.imageshack.com/img924/5400/M3eOOh.png",
@@ -311,12 +294,20 @@ const projectsData = [
     ],
     additional: [
       {
-        title: "Github (Old)",
+        title: "Github (Frontend: Old)",
         link: "https://github.com/lussyanast/bajobliss/tree/dev",
       },
       {
-        title: "Github (New)",
+        title: "Github (Frontend: New)",
         link: "https://github.com/BajoBliss/front",
+      },
+      {
+        title: "Github (Backend: Old)",
+        link: "https://github.com/lussyanast/bajobliss/tree/server",
+      },
+      {
+        title: "Github (Backend: New)",
+        link: "https://github.com/BajoBliss/back",
       },
       {
         title: "Live View",
@@ -327,12 +318,117 @@ const projectsData = [
   },
   {
     id: id++,
-    title: "Point!",
-    category: "Website",
-    cover: "https://imagizer.imageshack.com/img924/5430/xvgvmJ.png",
-    type: "Front-End",
+    title: "KafeKita Management System",
+    category: "Café Management Platform",
+    cover:
+      "https://lh3.googleusercontent.com/pw/AP1GczObcoVJ3YFjAWGwaOT71kdDn6j9gUgBor8C9EzIxgqlB9YpC2R2um_hronNDiDV1GzkozOgWOK-dSDT2udW-OQrdm_rUf_lSS11NA0q46Zv1Hu6Dd2vXEKqUR64UeKk1fbkx-Sqk70zmwyHoD9E0hgg=w1920-h868-s-no-gm?authuser=0",
+    type: "Full-Stack Development",
+    summary: "Final Project: BNSP Professional Certification (LSP)",
+    description:
+      "KafeKita Management System is a full-stack web application designed to simulate a modern self-order kiosk system for cafés, inspired by McDonald’s digital ordering experience.\n\n" +
+      "The system allows customers to browse menus and place orders independently through a responsive self-order interface. It also includes a comprehensive dashboard with role-based access for cashier, kitchen, and waitress users, each with tailored features to support daily operations.\n\n" +
+      "Developed using Next.js, React, TypeScript, and Tailwind CSS (with shadcn components) for the front-end, while Firebase handles real-time data management and authentication using Firestore and Firebase Authentication. This project demonstrates an end-to-end implementation of a scalable, real-time management system built for production-ready performance.",
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "Node.js",
+      "React",
+      "Next.js",
+      "Firestore",
+      "Firebase Authentication",
+      "Tailwind CSS",
+      "shadcn",
+      "Café Management System",
+      "Self-Order Kiosk",
+      "Role-Based Access Control",
+    ],
+    gallery: [
+      "https://lh3.googleusercontent.com/pw/AP1GczObcoVJ3YFjAWGwaOT71kdDn6j9gUgBor8C9EzIxgqlB9YpC2R2um_hronNDiDV1GzkozOgWOK-dSDT2udW-OQrdm_rUf_lSS11NA0q46Zv1Hu6Dd2vXEKqUR64UeKk1fbkx-Sqk70zmwyHoD9E0hgg=w1920-h868-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczMMTJJ0r--wUTiiCl3ngJoArBJ6LCtaXlH5WkAZmIgdntwR7jk3YKkHRKG3IW_fSHNdbn2LQe55lZ_tjatDLFwzMzaZdpRjbI4enbE9VkFhLCJNJuhLLk06sMCDiit-zdwqR01_bCzSdjfLI2f4QxvN=w1920-h862-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczMj4GKphtKduNzjLwlXTiLi88H1_kOhtSbCSLexW0mpm3DyHn-8UcFCNhvf3CTxgeVmX6aFtEToAACMBktpIBxEPs0cB6TYxUfKBPkNvJsOobLZY3o68c_ihKXjO2aG4WvI-ioDgnhnmH0uHVMKtNEu=w1920-h865-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczNqjQtavJF1L-bZsGoWCtrGyJILw5V1axsk_qulm0of3CvxweASAQ_k6dkhphGdbyD4WKxKJxxMXxzciQeOLu-Dopk5jsRnsDZcMlRRRBiwdwJlOHm5wKACOMonG5DRH_x17k_q2eFK0a6zc2T9ovAN=w1920-h865-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczOLbQ2Fzx9hmaXoxg5NyrKn-CcjcmQHNjgUy2iXcg0Oqjj-ZXI7Z15Ng8pY5JJGi5y14U9lZyA8oJt8kXMPoIa9r7jKI4sEJT30AZ0XX-zvvxEOTaHTVxReAT3Xdcnbw6ddWgWL6RJ6DD574Ip3IgCJ=w1915-h869-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczNyFUZghwoMkITmnXj358J1nFaN2ExIMTYd2l-v6hyhtRZjdQJbRRADtvXXV-QY43U2xPkS4MOfvxNAsUajkN4_qRFVvCCSelX09RowV0ojM3ju8A9makQdkyEHlZaQpd0zJs8hFRvZTe7ifku6R9km=w1920-h867-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczNZJpTHxCFQJQSig53T21yGNGhKUhGV3QJIBUyggxq4odkEw8EjpfI-02Q1V2TSd0roes7lad11AthE2hnZJJJVl2AmWcd_5kIQP2hHYiD4d21cbxj7rL8UL-HtwjpD7fI8DGBNMzVfY2JU5AT5TQm3=w1920-h862-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczOcgB6LkCuRsCX305LjHYOHAyaKg7xXA076zNAWGWU9gkZnHY3w0yXC3WSzYCAYN-5UNpDyRXMFLR5v-joU9TFQRdvGg_ZpwITbhm94i5Eozz_S6pBK5M2Pisq5KawZKujbg1tjfcU9nXanwx73YIc2=w1920-h867-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczOYkc-DXHtBMrAMm7FMZWQrr5RCw4kt4pN2cZeWo5Qwl1hUOdv9ubyYuEJ1Po1blAy_uGnpnx0l1fzGO9Kj87RPLWgJUUIMUpGvuidVo1cVXUVrwlLBaqUL-iaMMOsfxfrE9IbnpsYA7ZD4sYjOOdBE=w1920-h863-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczPohufMFgDdIdzZdXXHHEuvL3qEb8hM10ICz9_xB7pYZ5Zh7kRdEK58TwpcGUQc_yacUsekM5II_6XJGhaAoRVGkok-LTozKeHpaTO-yWWKis9m5zPmkm13zv2rfOHlg_B4SrhEdTkeenDmrXWxTbb9=w1920-h865-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczPh2szBhGz_ce_pdz4TgWyucBJB_BFIqWrIZmEN3_GD38fofpZNQm1ZCH1h3V4hgwP9YVTGgwIlpoxQmDqvLkSUG7Hu1oUbXpe3g3AdDZQnUvPJP8ouZRWbidCjpmFuX2GB-zLGkMfD1pmZnQdivfCI=w1918-h869-s-no-gm?authuser=0",
+    ],
+    additional: [
+      {
+        title: "Github",
+        link: "https://github.com/xhaeffer/LSP-KafeKita",
+      },
+      {
+        title: "Live View",
+        link: "https://lsp-kafe-kita.vercel.app/",
+      },
+      {
+        title: "Live View - Dashboard",
+        link: "https://lsp-kafe-kita.vercel.app/dashboard",
+      },
+    ],
+  },
+  {
+    id: id++,
+    title: "Dicoding Forum",
+    category: "Forum Web App",
+    cover:
+      "https://lh3.googleusercontent.com/pw/AP1GczMLTyV86Y5ATSqFXu0w0WuLJYln0o9IzbyLPEudfISuJnmMNf_dGIWmJZKQB29fBrn63VATraBConlPiOa722dmcU3lHWbKdT2fJXM-rDJ7U09ODHRchUL9x9yrUM6f6wX0P6JW9E7s7y5aSuLln1B0=w1920-h868-s-no-gm?authuser=0",
+    type: "Front-End Development",
     summary:
-      "Final Submission: Menjadi Front-End Web Developer Expert - Dicoding Indonesia",
+      "Final Submission: Menjadi React Web Developer Expert (Dicoding Indonesia)",
+    description:
+      "The application simulates a modern discussion ecosystem where users can register, log in, create threads, post comments, and interact through a voting system. It integrates with the official **Dicoding Forum API**, ensuring real-time synchronization and secure data handling.\n\n" +
+      "- **Front-End:** Developed with React, Redux Toolkit, and Material UI to deliver a responsive, accessible, and modular user interface. The design takes inspiration from Reddit’s minimalist card-based layout, providing a familiar and engaging discussion experience.\n\n" +
+      "- **Automation & CI/CD:** Comprehensive testing implemented using Vitest, Testing Library, and Cypress for unit, integration, and end-to-end testing. The project also features continuous integration and deployment through GitHub Actions and Vercel with branch protection.\n\n" +
+      "This project emphasizes maintainable state management, reliable CI/CD pipelines, and production-grade testing coverage—showcasing full front-end engineering capabilities aligned with professional standards.",
+    tags: [
+      "React",
+      "Redux Toolkit",
+      "React Router",
+      "Material UI",
+      "Vite",
+      "Vitest",
+      "Cypress",
+      "Testing Library",
+      "CI/CD",
+      "GitHub Actions",
+      "Vercel",
+      "State Management",
+      "Automation Testing",
+    ],
+    gallery: [
+      "https://lh3.googleusercontent.com/pw/AP1GczPxoPqJf3NrL05eC3U2mMEPLObu85p-_P_dvenT3ResZYVCmolMI37tCaEU7dvuhDQ34T-mjmqf-exmS18AeUb0ekXjjPbXqNiuaRV7a1vqj4vy3vnINwuSDrEwx0FNUuIyzXaPg4KI2OnERoJ4IrKr=w1920-h863-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczNfQ7FuHL5XhVxJZ_DSYrg_G2btrLdNOuzN302soN5IbxXlrMOWurBiz61KtdT9HyB3qbYD0zseqsz4jyY5a9eufhgYc-VeiGpWV42-RhSW_OoMhRMK2jgaeOEITJbaLAmCvbzVxOMW-KhQp7kJNuHM=w1920-h866-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczMLTyV86Y5ATSqFXu0w0WuLJYln0o9IzbyLPEudfISuJnmMNf_dGIWmJZKQB29fBrn63VATraBConlPiOa722dmcU3lHWbKdT2fJXM-rDJ7U09ODHRchUL9x9yrUM6f6wX0P6JW9E7s7y5aSuLln1B0=w1920-h868-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczMvH7Vg38am6lnEvOEkNrwHRBblg-140yYaSxiNPJtm3a7yIX2dmonvfemgMGt7kZFxyExyzXngcw2HaNwMl3_7-3DtShzIomnyZ_Ev4de2JB--Ihp0C3OZ6lmuOwiVL1hpLd2XHyp0FY0OFzRbqwiw=w1920-h860-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczMyG3cSN1gpU8yGiSwp_nZIFrdxo1CqXADHGOz5z9MAyAT57ezXs_k_hATYDctLyEKVnVKj1CN3Xhb4FfxQrm2iEHgVW_ORHsR166YSIKf9LmdJhvjzf6qxOICjpD_5AjJ88ssD0ikiyhfpLiK_-NoV=w1920-h868-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczPfmzG1Tmsg84z_jELppOp_W8WAfZRtQDVh0SdSsDG-bTJJEVEdIlAiDitrzMheE23rwFXqfBLu_ZBpDyWpmiQpjMtSA6dmb-7LwAo3SIEGlnGa987tso6ZlOcQt74FKMBiWnC_P2oRQC7QGM2f0mvd=w1918-h869-s-no-gm?authuser=0",
+      "https://lh3.googleusercontent.com/pw/AP1GczPY2hMp5xb-xNEjXDQC6C2cZj9uHEldro8Gr0Go6VCGgDoG-5IC3qjkvCbGCUArfnCBE4AsgBTrfzotFiNiH3w9O9wIyqZcjuXbgpODyeu1Nr7Lbw1H6nlI8xtXFu6ZhV-3jClJ0OpDaiLfxIeGTiAW=w1920-h865-s-no-gm?authuser=0",
+    ],
+    additional: [
+      {
+        title: "Github",
+        link: "https://github.com/xhaeffer/dicoding-forum",
+      },
+      {
+        title: "Live View",
+        link: "https://dicoding-forum-pi.vercel.app/",
+      },
+    ],
+  },
+  {
+    id: id++,
+    title: "Point!",
+    category: "Restaurant Review Web App",
+    cover: "https://imagizer.imageshack.com/img924/5430/xvgvmJ.png",
+    type: "Front-End Development",
+    summary:
+      "Final Submission: Menjadi Front-End Web Developer Expert (Dicoding Indonesia)",
     description:
       "https://raw.githubusercontent.com/xhaeffer/Dicoding-Point-Web/master/README.md",
     tags: [
@@ -374,20 +470,8 @@ const projectsData = [
   },
   {
     id: id++,
-    title: "Dicoding Forum",
-    category: "Website",
-    cover: "",
-    type: "Front-End",
-    summary: "",
-    description: "",
-    tags: [],
-    gallery: [],
-    additional: [],
-  },
-  {
-    id: id++,
     title: "Literify",
-    category: "AI-Powered App",
+    category: "Gamified AI Literacy App",
     cover: "https://imagizer.imageshack.com/img923/5736/hZknYq.png",
     type: "Android Development",
     summary: "Capstone Project: Literify - Bangkit Academy 2024",
@@ -440,14 +524,36 @@ const projectsData = [
   {
     id: id++,
     title: "MRT Jakarta Emergency Awareness",
-    category: "Android App",
-    cover: "",
+    category: "Public Safety Educational AR App",
+    cover:
+      "https://lh3.googleusercontent.com/pw/AP1GczPv8uF3RkmOPzvM5Huc-_Y-bSEkOs1-vAsjG4kSgacR9VPX-hBa9Uu2O-jq8LGp0mhHFub82eTvn-tfN_hczDV4-VCSEwnPZcap1wUniEpk9Bjvf_K0Qd3PP-3vnSseSOtkzRVU-kMl7fPgMUEsxPJj=w1920-h654-s-no-gm?authuser=0",
     type: "Android Development",
     summary: "Penulisan Ilmiah: Universitas Gunadarma",
-    description: "",
-    tags: [],
-    gallery: [],
-    additional: [],
+    description:
+      "MRT Jakarta Emergency Awareness is an Augmented Reality (AR) mobile application developed using Unity3D and Vuforia, aimed at improving passenger awareness and preparedness during emergency situations on the MRT Jakarta system.\n\n" +
+      "This project, conducted as part of a scientific writing requirement at Universitas Gunadarma, leverages AR technology to provide interactive and engaging educational experiences. The app utilizes **object recognition** to identify components within the MRT carriage and display relevant safety information and evacuation procedures.\n\n" +
+      "This project showcases the practical integration of Augmented Reality into public safety education, combining technology and social awareness for impactful learning experiences.",
+    tags: [
+      "Unity3D",
+      "Vuforia SDK",
+      "C#",
+      "Augmented Reality",
+      "Object Recognition",
+      "3D Visualization",
+      "Android Development",
+      "Public Safety",
+      "Educational Technology",
+    ],
+    gallery: [
+      "https://lh3.googleusercontent.com/pw/AP1GczPv8uF3RkmOPzvM5Huc-_Y-bSEkOs1-vAsjG4kSgacR9VPX-hBa9Uu2O-jq8LGp0mhHFub82eTvn-tfN_hczDV4-VCSEwnPZcap1wUniEpk9Bjvf_K0Qd3PP-3vnSseSOtkzRVU-kMl7fPgMUEsxPJj=w1920-h654-s-no-gm?authuser=0",
+    ],
+    additional: [
+      {
+        title: "Github",
+        link: "#",
+        disabled: true,
+      },
+    ],
   },
 ];
 
