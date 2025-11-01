@@ -30,12 +30,11 @@ const BigCard = ({
         )}
       >
         <div className="flex flex-col flex-grow overflow-hidden">
-          <h1 className="text-2xl font-semibold tracking-tight text-white line-clamp-2">
+          <h1 className="text-xl font-semibold tracking-tight text-white line-clamp-1">
             {title}
           </h1>
           <h2 className="font-medium text-gray-400">{type}</h2>
-          <br />
-          <p className="font-normal text-slate-400 mt-2 max-[350px]:line-clamp-1 line-clamp-3">
+          <p className="font-normal text-slate-400 mt-4 max-[350px]:line-clamp-1 line-clamp-4">
             {summary}
           </p>
         </div>
