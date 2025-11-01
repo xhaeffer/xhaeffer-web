@@ -4,6 +4,13 @@
         "source": "/(.*)",
         "destination": "/index.html"
       }
+    ],
+    "redirects": [
+      {
+        "source": "/project/11",
+        "destination": "/project/MRT-Jakarta-Emergency-Awareness",
+        "permanent": true
+      }
     ]
   }
   
