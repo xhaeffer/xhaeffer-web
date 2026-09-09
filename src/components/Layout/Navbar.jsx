@@ -23,7 +23,7 @@ const NavigationBar = () => {
       </Navbar.Brand>
 
       <div className="flex md:order-2">
-        <div className="flex items-center mx-2">
+        <div className="flex items-center mx-2 invisible">
           <ToggleSwitch checked={switchLang} onChange={setSwitchLang} />
           <label className="text-white text-sm ml-2">
             {switchLang ? "ENG" : "IND"}
