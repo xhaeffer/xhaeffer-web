@@ -2,10 +2,9 @@ export const en = {
   HELLO: "Hello, I'm Subhan S",
   ABOUT_ME: "About Me",
   ABOUT_ME_DESC: 
-    "Hola! I'm an Informatics graduate and Software Engineer passionate about building scalable and reliable software.\n\n" +
-    "I specialize in backend, web, and mobile development, with experience designing RESTful APIs, optimizing system performance, and creating interactive applications. " +
-    "Over the years, I’ve worked on diverse projects such as web platforms, productivity chatbots, and mobile apps, often collaborating with cross-functional teams.\n\n" +
-    "Curious and adaptable, I always strive to learn new things, embrace challenges, and deliver solutions that create meaningful impact.\n\n",
+    "Hola! I'm a Software Engineer with a background in Informatics, building across backend, web, and mobile systems.\n\n" +
+    "My work focuses on solving architectural bottlenecks and building practical software: enterprise store platforms, modular ERP systems, high-throughput WhatsApp bots, and peer-reviewed NLP research.\n\n" +
+    "I care about clean code, reliable architecture, and shipping tools that work dependably in production.\n\n",
   SKILLS: "Skills",
   PROJECTS: "Projects",
   REACH_OUT: "Reach Out",
