@@ -56,6 +56,62 @@ const projectsData = [
     ],
   },
   {
+    id: "DigitalDiaryku",
+    title: "DigitalDiary.ku",
+    category: "Social Emotional Learning Platform",
+    cover: `${CDN_URL}/projects/digitaldiaryku/cover.jpg`,
+    type: "Full-Stack Engineering",
+    summary:
+      "Full-stack SEL journaling platform for BINUS University research, published in IEEE.",
+    description:
+      "DigitalDiary.ku is a full-stack Social Emotional Learning (SEL) platform developed for a research team at Bina Nusantara (BINUS) University. Built to support student self-reflection, the platform enables students to write daily reflective journals, monitor emotional states, and build positive habits, while providing educators with a dashboard to observe student progress.\n\n" +
+      "- **Ownership & Technical Implementation:**\n" +
+      "  - Led end-to-end engineering delivery, working directly with research stakeholders to author requirements and build the platform from scratch.\n" +
+      "  - Built with Next.js, Firebase Authentication, and Cloud Firestore for real-time data persistence and role-based access for students and educators.\n" +
+      "  - Designed an accessible, responsive user interface using Tailwind CSS and shadcn/ui components.\n\n" +
+      "- **Research Validation & Academic Outcomes:**\n" +
+      "  - Evaluated by 6 subject-matter experts, achieving a 4.53/5 content validity score.\n" +
+      "  - Platform findings and methodology published across three academic papers, including IEEE ITIS 2025.\n" +
+      "  - Currently live in production, with a platform rebuild planned for next year.",
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Firebase",
+      "Cloud Firestore",
+      "Full-Stack Development",
+      "EdTech",
+      "Social Emotional Learning",
+      "BINUS University",
+      "IEEE Published",
+    ],
+    gallery: [
+      `${CDN_URL}/projects/digitaldiaryku/gallery-1.jpg`,
+      `${CDN_URL}/projects/digitaldiaryku/gallery-2.jpg`,
+      `${CDN_URL}/projects/digitaldiaryku/gallery-3.jpg`,
+      `${CDN_URL}/projects/digitaldiaryku/gallery-4.jpg`,
+      `${CDN_URL}/projects/digitaldiaryku/gallery-5.jpg`,
+      `${CDN_URL}/projects/digitaldiaryku/gallery-6.jpg`,
+      `${CDN_URL}/projects/digitaldiaryku/gallery-7.jpg`,
+      `${CDN_URL}/projects/digitaldiaryku/gallery-8.jpg`,
+      `${CDN_URL}/projects/digitaldiaryku/gallery-9.jpg`,
+      `${CDN_URL}/projects/digitaldiaryku/gallery-10.jpg`,
+      `${CDN_URL}/projects/digitaldiaryku/gallery-11.jpg`,
+    ],
+    additional: [
+      {
+        title: "Visit Website",
+        link: "https://digitaldiaryku.com/",
+      },
+      {
+        title: "Github (Private)",
+        link: "https://github.com/xhaeffer/DigitalDiaryku-App",
+      },
+    ],
+  },
+    {
     id: "SuikaBot",
     title: "SuikaBot",
     category: "Multipurpose WhatsApp Bot",
@@ -109,62 +165,6 @@ const projectsData = [
       {
         title: "Github (Private)",
         link: "https://github.com/SuikaStudio",
-      },
-    ],
-  },
-  {
-    id: "DigitalDiaryku",
-    title: "DigitalDiary.ku",
-    category: "Social Emotional Learning Platform",
-    cover: `${CDN_URL}/projects/digitaldiaryku/cover.jpg`,
-    type: "Full-Stack Engineering",
-    summary:
-      "Full-stack SEL journaling platform for BINUS University research, published in IEEE.",
-    description:
-      "DigitalDiary.ku is a full-stack Social Emotional Learning (SEL) platform developed for a research team at Bina Nusantara (BINUS) University. Built to support student self-reflection, the platform enables students to write daily reflective journals, monitor emotional states, and build positive habits, while providing educators with a dashboard to observe student progress.\n\n" +
-      "- **Ownership & Technical Implementation:**\n" +
-      "  - Led end-to-end engineering delivery, working directly with research stakeholders to author requirements and build the platform from scratch.\n" +
-      "  - Built with Next.js, Firebase Authentication, and Cloud Firestore for real-time data persistence and role-based access for students and educators.\n" +
-      "  - Designed an accessible, responsive user interface using Tailwind CSS and shadcn/ui components.\n\n" +
-      "- **Research Validation & Academic Outcomes:**\n" +
-      "  - Evaluated by 6 subject-matter experts, achieving a 4.53/5 content validity score.\n" +
-      "  - Platform findings and methodology published across three academic papers, including IEEE ITIS 2025.\n" +
-      "  - Currently live in production, with a platform rebuild planned for next year.",
-    tags: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "shadcn/ui",
-      "Firebase",
-      "Cloud Firestore",
-      "Full-Stack Development",
-      "EdTech",
-      "Social Emotional Learning",
-      "BINUS University",
-      "IEEE Published",
-    ],
-    gallery: [
-      `${CDN_URL}/projects/digitaldiaryku/gallery-1.jpg`,
-      `${CDN_URL}/projects/digitaldiaryku/gallery-2.jpg`,
-      `${CDN_URL}/projects/digitaldiaryku/gallery-3.jpg`,
-      `${CDN_URL}/projects/digitaldiaryku/gallery-4.jpg`,
-      `${CDN_URL}/projects/digitaldiaryku/gallery-5.jpg`,
-      `${CDN_URL}/projects/digitaldiaryku/gallery-6.jpg`,
-      `${CDN_URL}/projects/digitaldiaryku/gallery-7.jpg`,
-      `${CDN_URL}/projects/digitaldiaryku/gallery-8.jpg`,
-      `${CDN_URL}/projects/digitaldiaryku/gallery-9.jpg`,
-      `${CDN_URL}/projects/digitaldiaryku/gallery-10.jpg`,
-      `${CDN_URL}/projects/digitaldiaryku/gallery-11.jpg`,
-    ],
-    additional: [
-      {
-        title: "Visit Website",
-        link: "https://digitaldiaryku.com/",
-      },
-      {
-        title: "Github (Private)",
-        link: "https://github.com/xhaeffer/DigitalDiaryku-App",
       },
     ],
   },
@@ -313,101 +313,6 @@ const projectsData = [
       {
         title: "Github (Frontend)",
         link: "https://github.com/lussyanast/bajobliss/tree/dev",
-      },
-    ],
-  },
-  {
-    id: "Dicoding-Forum",
-    title: "Dicoding Forum",
-    category: "Forum Web App",
-    cover: `${CDN_URL}/projects/dicoding-forum/cover.jpg`,
-    type: "Front-End Development",
-    summary:
-      "Reddit-inspired discussion forum with Vitest, Cypress, and CI/CD automation.",
-    description:
-      "The application simulates a modern discussion ecosystem where users can register, log in, create threads, post comments, and interact through a voting system. It integrates with the official **Dicoding Forum API**, ensuring real-time synchronization and secure data handling.\n\n" +
-      "- **Front-End:** Developed with React, Redux Toolkit, and Material UI to deliver a responsive, accessible, and modular user interface. The design takes inspiration from Reddit’s minimalist card-based layout, providing a familiar and engaging discussion experience.\n\n" +
-      "- **Automation & CI/CD:** Comprehensive testing implemented using Vitest, Testing Library, and Cypress for unit, integration, and end-to-end testing. The project also features continuous integration and deployment through GitHub Actions and Vercel with branch protection.\n\n" +
-      "This project emphasizes maintainable state management, reliable CI/CD pipelines, and production-grade testing coverage, showcasing full front-end engineering capabilities aligned with professional standards.",
-    tags: [
-      "React",
-      "Redux Toolkit",
-      "React Router",
-      "Material UI",
-      "Vite",
-      "Vitest",
-      "Cypress",
-      "Testing Library",
-      "CI/CD",
-      "GitHub Actions",
-      "Vercel",
-      "State Management",
-      "Automation Testing",
-    ],
-    gallery: [
-      `${CDN_URL}/projects/dicoding-forum/gallery-1.jpg`,
-      `${CDN_URL}/projects/dicoding-forum/gallery-2.jpg`,
-      `${CDN_URL}/projects/dicoding-forum/cover.jpg`,
-      `${CDN_URL}/projects/dicoding-forum/gallery-4.jpg`,
-      `${CDN_URL}/projects/dicoding-forum/gallery-5.jpg`,
-      `${CDN_URL}/projects/dicoding-forum/gallery-6.jpg`,
-      `${CDN_URL}/projects/dicoding-forum/gallery-7.jpg`,
-    ],
-    additional: [
-      {
-        title: "Github",
-        link: "https://github.com/xhaeffer/dicoding-forum",
-      },
-      {
-        title: "Visit Website",
-        link: "https://dicoding-forum-pi.vercel.app/",
-      },
-    ],
-  },
-  {
-    id: "Point-Web",
-    title: "Point!",
-    category: "Restaurant Review Web App",
-    cover: `${CDN_URL}/projects/point-web/cover.webp`,
-    type: "Front-End Development",
-    summary:
-      "PWA restaurant review web app for Dicoding Front-End Expert certification.",
-    description:
-      "https://raw.githubusercontent.com/xhaeffer/Dicoding-Point-Web/master/README.md",
-    tags: [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Mobile-First Approach",
-      "Progressive Web Apps",
-      "Accessibility",
-      "IndexedDB",
-      "Lazy Loading",
-      "Clean Code",
-      "Automation Testing",
-      "Web Vitals Optimization",
-    ],
-    gallery: [
-      `${CDN_URL}/projects/point-web/gallery-1.webp`,
-      `${CDN_URL}/projects/point-web/gallery-2.webp`,
-      `${CDN_URL}/projects/point-web/gallery-3.webp`,
-      `${CDN_URL}/projects/point-web/gallery-4.webp`,
-      `${CDN_URL}/projects/point-web/gallery-5.webp`,
-      `${CDN_URL}/projects/point-web/gallery-6.webp`,
-      `${CDN_URL}/projects/point-web/gallery-7.webp`,
-      `${CDN_URL}/projects/point-web/gallery-8.webp`,
-      `${CDN_URL}/projects/point-web/gallery-9.webp`,
-      `${CDN_URL}/projects/point-web/gallery-10.webp`,
-      `${CDN_URL}/projects/point-web/gallery-11.webp`,
-    ],
-    additional: [
-      {
-        title: "Github",
-        link: "https://github.com/xhaeffer/Dicoding-Point-Web",
-      },
-      {
-        title: "Live View",
-        link: "https://dicoding-point-restaurant.vercel.app/",
       },
     ],
   },
@@ -574,5 +479,104 @@ const projectsData = [
     ],
   },
 ];
+
+// eslint-disable-next-line no-unused-vars
+const hiddenProjectsData = [
+  {
+    id: "Dicoding-Forum",
+    title: "Dicoding Forum",
+    category: "Forum Web App",
+    cover: `${CDN_URL}/projects/dicoding-forum/cover.jpg`,
+    type: "Front-End Development",
+    summary:
+      "Reddit-inspired discussion forum with Vitest, Cypress, and CI/CD automation.",
+    description:
+      "The application simulates a modern discussion ecosystem where users can register, log in, create threads, post comments, and interact through a voting system. It integrates with the official **Dicoding Forum API**, ensuring real-time synchronization and secure data handling.\n\n" +
+      "- **Front-End:** Developed with React, Redux Toolkit, and Material UI to deliver a responsive, accessible, and modular user interface. The design takes inspiration from Reddit’s minimalist card-based layout, providing a familiar and engaging discussion experience.\n\n" +
+      "- **Automation & CI/CD:** Comprehensive testing implemented using Vitest, Testing Library, and Cypress for unit, integration, and end-to-end testing. The project also features continuous integration and deployment through GitHub Actions and Vercel with branch protection.\n\n" +
+      "This project emphasizes maintainable state management, reliable CI/CD pipelines, and production-grade testing coverage, showcasing full front-end engineering capabilities aligned with professional standards.",
+    tags: [
+      "React",
+      "Redux Toolkit",
+      "React Router",
+      "Material UI",
+      "Vite",
+      "Vitest",
+      "Cypress",
+      "Testing Library",
+      "CI/CD",
+      "GitHub Actions",
+      "Vercel",
+      "State Management",
+      "Automation Testing",
+    ],
+    gallery: [
+      `${CDN_URL}/projects/dicoding-forum/gallery-1.jpg`,
+      `${CDN_URL}/projects/dicoding-forum/gallery-2.jpg`,
+      `${CDN_URL}/projects/dicoding-forum/cover.jpg`,
+      `${CDN_URL}/projects/dicoding-forum/gallery-4.jpg`,
+      `${CDN_URL}/projects/dicoding-forum/gallery-5.jpg`,
+      `${CDN_URL}/projects/dicoding-forum/gallery-6.jpg`,
+      `${CDN_URL}/projects/dicoding-forum/gallery-7.jpg`,
+    ],
+    additional: [
+      {
+        title: "Github",
+        link: "https://github.com/xhaeffer/dicoding-forum",
+      },
+      {
+        title: "Visit Website",
+        link: "https://dicoding-forum-pi.vercel.app/",
+      },
+    ],
+  },
+  {
+    id: "Point-Web",
+    title: "Point!",
+    category: "Restaurant Review Web App",
+    cover: `${CDN_URL}/projects/point-web/cover.webp`,
+    type: "Front-End Development",
+    summary:
+      "PWA restaurant review web app for Dicoding Front-End Expert certification.",
+    description:
+      "https://raw.githubusercontent.com/xhaeffer/Dicoding-Point-Web/master/README.md",
+    tags: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Mobile-First Approach",
+      "Progressive Web Apps",
+      "Accessibility",
+      "IndexedDB",
+      "Lazy Loading",
+      "Clean Code",
+      "Automation Testing",
+      "Web Vitals Optimization",
+    ],
+    gallery: [
+      `${CDN_URL}/projects/point-web/gallery-1.webp`,
+      `${CDN_URL}/projects/point-web/gallery-2.webp`,
+      `${CDN_URL}/projects/point-web/gallery-3.webp`,
+      `${CDN_URL}/projects/point-web/gallery-4.webp`,
+      `${CDN_URL}/projects/point-web/gallery-5.webp`,
+      `${CDN_URL}/projects/point-web/gallery-6.webp`,
+      `${CDN_URL}/projects/point-web/gallery-7.webp`,
+      `${CDN_URL}/projects/point-web/gallery-8.webp`,
+      `${CDN_URL}/projects/point-web/gallery-9.webp`,
+      `${CDN_URL}/projects/point-web/gallery-10.webp`,
+      `${CDN_URL}/projects/point-web/gallery-11.webp`,
+    ],
+    additional: [
+      {
+        title: "Github",
+        link: "https://github.com/xhaeffer/Dicoding-Point-Web",
+      },
+      {
+        title: "Live View",
+        link: "https://dicoding-point-restaurant.vercel.app/",
+      },
+    ],
+  },
+]
 
 export default projectsData;
